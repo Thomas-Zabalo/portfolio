@@ -2,20 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --highlight: #cdfb52;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --highlight: #5279fb;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.highlight::before {
+  position: absolute;
+  top: -0.3125rem;
+  left: -0.625rem;
+  width: calc(100% + 1.125rem);
+  height: calc(100% + 0.625rem);
+  background-color: var(--highlight);
+  transform: skewX(-2deg);
+  content: "";
+}
+
+.heading__content {
+  background: url('../../public/background.jpg');
+  background-size: cover;
+  height: calc(130vw + var(--vh)* 25);
+  min-height: calc(var(--vh)* 210);
+  position: relative;
+  width: 100%;
+  background-position: center bottom;
+  overflow: hidden;
+}
+
+
+.home-vision {
+  background: linear-gradient(#5c97ce, #8ba9cc);
+  display: flex;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 15.625rem 0;
+  position: relative;
+  width: 100%;
 }

@@ -3,7 +3,7 @@ import SubTitle from "@/molecules/SubTitle"
 
 function Hero() {
     return (
-        <div>
+        <div className="heading__content">
             <SubTitle />
         </div>
     )
