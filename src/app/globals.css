@@ -13,6 +13,8 @@
   --background: #ffffff;
   --foreground: #171717;
   --highlight: #cdfb52;
+  --vhf: 13.31px;
+  --vh: 13.31px;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -41,16 +43,23 @@ body {
 }
 
 .heading__content {
-  background: url('../../public/background.jpg');
+  background-position: bottom;
   background-size: cover;
   height: calc(130vw + var(--vh)* 25);
-  min-height: calc(var(--vh)* 210);
+  min-height: calc(var(--vh)* 160);
+  overflow: hidden;
   position: relative;
   width: 100%;
-  background-position: center bottom;
-  overflow: hidden;
 }
 
+.heading__media {
+  bottom: -1px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  width: 100%;
+  z-index: 3;
+}
 
 .home-vision {
   background: linear-gradient(#5c97ce, #8ba9cc);
@@ -60,4 +69,34 @@ body {
   padding: 15.625rem 0;
   position: relative;
   width: 100%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(50vw);
+  }
+
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+@keyframes marquee1 {
+  0% {
+    transform: translateX(0vw);
+  }
+
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+
+.cloud>div {
+  animation: marquee 100s linear infinite;
+  will-change: transform;
+}
+
+.cloud1>div {
+  animation: marquee1 100s linear infinite;
+  will-change: transform;
 }

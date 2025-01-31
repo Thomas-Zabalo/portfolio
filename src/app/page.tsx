@@ -1,7 +1,6 @@
-import Footer from "@/molecules/Footer";
-import Header from "@/molecules/Header";
-import About from "@/organisms/About";
-import Hero from "@/organisms/Hero";
+
+import About from "@/organisms/About/About";
+import Hero from "@/organisms/Hero/Hero";
 
 
 export default function Home() {
