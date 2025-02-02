@@ -15,16 +15,18 @@ function Hero() {
     }, []);
 
     return (
-        <div className="bg-[#5c97ce]">
-            <div className="heading__content" style={{ backgroundImage: "url('/background.jpg')" }}            >
-                <BrandTitle />
-                <div className="heading__media" style={{ transform: "translate(-50%, 0%);" }}>
-                    <div className="heading__media__offset">
-                        <img width="2880" height="3770" alt="Two guys leaning against a vending machine, containing colourful cans." src="/city.webp" />
+        <section data-header="light">
+            <div className="bg-[#5c97ce]">
+                <div className="heading__content" style={{ backgroundImage: "url('/background.jpg')" }}            >
+                    <BrandTitle />
+                    <div className="heading__media" style={{ transform: "translate(-50%, 0%);" }}>
+                        <div className="heading__media__offset">
+                            <img width="2880" height="3770" alt="Two guys leaning against a vending machine, containing colourful cans." src="/city.webp" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
