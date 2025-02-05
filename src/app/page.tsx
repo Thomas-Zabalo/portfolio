@@ -1,17 +1,18 @@
-
-import About from "@/organisms/About/About";
-import Hero from "@/organisms/Hero/Hero";
-import NavBar from "@/organisms/NavBar/NavBar";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Hero from "@/components/Hero";
+import NavBar from "@/components/NavBar";
+import Project from "@/components/Project";
 
 
 export default function Home() {
   return (
     <div>
-      <header id="header" className='fixed top-0 w-full z-50 pt-10 px-8'>
-        <NavBar />
-      </header>
+      <NavBar />
       <Hero />
       <About />
+      <Project />
+      <Contact />
     </div >
   );
 }
