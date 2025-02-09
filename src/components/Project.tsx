@@ -6,13 +6,26 @@ const anton = Anton({ weight: '400', subsets: ['latin'] })
 
 function Project() {
     return (
-        <section data-header='dark' className='flex items-center flex-row justify-center'>
+        <section className='flex items-center flex-row justify-center'>
 
             <div className="self-stretch flex-none h-auto relative w-[8%] lg:block hidden lg:border-b-2 lg:border-[#e40038]" style={{ transform: "rotate(180deg)" }}>
                 <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative" data-framer-name="Variant 1">
-                    <div className="gap-8" style={{ transform: "rotate(90deg)", opacity: 1 }}>
-                        <div className="">
-                            <h6 className={`${PP.className} text-4xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                    <div className="gap-80 flex" style={{ transform: "rotate(90deg)", opacity: 1 }}>
+                        <div className='gap-40 flex'>
+                            <div className="">
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                            </div>
+                            <div className="">
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                            </div>
+                        </div>
+                        <div className='gap-40 flex'>
+                            <div className="">
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                            </div>
+                            <div className="">
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -33,7 +46,6 @@ function Project() {
 
                 <section className='w-full'>
                     <div className='flex flex-col'>
-                        {/* Projet 1 */}
                         <div className='contents'>
                             <div className='w-full h-auto relative flex-none bg-transparent hover:bg-[#e40038] text-[#e40038] hover:text-[#faf3e9] transition-all duration-700 border-b-2 border-[#e40038]'>
                                 <div className='p-4 flex flex-col flex-nowrap h-min justify-start'>
@@ -100,7 +112,7 @@ function Project() {
                             </div>
                         </div>
                         <div className='contents'>
-                            <div className='w-full h-auto relative flex-none bg-transparent hover:bg-[#e40038] text-[#e40038] hover:text-[#faf3e9] transition-all duration-700 border-b-2 border-[#e40038]'>
+                            <div className='w-full h-auto relative flex-none bg-transparent hover:bg-[#e40038] text-[#e40038] hover:text-[#faf3e9] transition-all duration-700 border-[#e40038]'>
                                 <div className='p-4 flex flex-col flex-nowrap h-min justify-start'>
                                     <div>
                                         <div>
@@ -122,9 +134,22 @@ function Project() {
 
             <div className="self-stretch flex-none h-auto relative w-[8%] lg:block hidden lg:border-b-2 lg:border-[#e40038]" style={{ transform: "rotate(180deg)" }}>
                 <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative" data-framer-name="Variant 1">
-                    <div className="gap-8" style={{ transform: "rotate(270deg)", opacity: 1 }}>
-                        <div className="">
-                            <h6 className={`${PP.className} text-4xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                    <div className="gap-80 flex" style={{ transform: "rotate(270deg)", opacity: 1 }}>
+                        <div className='gap-40 flex'>
+                            <div className="">
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                            </div>
+                            <div className="">
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                            </div>
+                        </div>
+                        <div className='gap-40 flex'>
+                            <div className="">
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                            </div>
+                            <div className="">
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                            </div>
                         </div>
                     </div>
                 </div>

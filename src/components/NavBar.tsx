@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import localFont from 'next/font/local';
 import { Anton } from 'next/font/google'
 import Image from 'next/image';
@@ -9,35 +9,8 @@ const anton = Anton({ weight: '400', subsets: ['latin'] })
 
 function NavBar() {
 
-    const [theme, setTheme] = useState("light");
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const section = document.querySelector("[data-header='dark']");
-            if (section) {
-                const rect = section.getBoundingClientRect();
-                const triggerOffset = window.innerHeight * 0.02; // 2% de l'écran
-                const threshold = 30; // 15px avant d'atteindre le haut
-
-                if (rect.top <= threshold + triggerOffset && rect.bottom >= 0) {
-                    setTheme("dark");
-                } else {
-                    setTheme("light");
-                }
-            }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        handleScroll(); // Vérifier dès le chargement
-
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
-
-
-
     return (
-        <header id="header" className='fixed top-0 w-full z-50 pt-10 px-8'>
+        <header id="header" className='fixed top-0 w-full z-50 py-8 px-8 bg-[#faf3e9] border-b-2 border-[#e40038]'>
             <div id='akitomo-navbar' className='flex items-center justify-between'>
                 <div>
                     <div id='BrandName'>

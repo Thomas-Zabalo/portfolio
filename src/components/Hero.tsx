@@ -2,11 +2,11 @@
 import React, { useState, useEffect } from 'react';
 import localFont from 'next/font/local';
 import { Anton } from 'next/font/google'
-
 const PP = localFont({ src: '../fonts/PPNikkeiMaru-Ultrabold.otf' });
 const anton = Anton({ weight: '400', subsets: ['latin'] })
 
 function Hero() {
+
     const [scrollY, setScrollY] = useState(0);
 
     useEffect(() => {
@@ -19,15 +19,33 @@ function Hero() {
     }, []);
 
     return (
-        <section data-header="light">
+        <section>
             <div className="">
-                <div className="">
-                    <div>
+                <div className="overflow-hidden">
+                    {/* <div className="overflow-hidden absolute bottom-0 left-0 z-0" style={{
+                        transform: `rotate(${Math.min(scrollY * -0.1, 200)}deg)`,
+                        transition: 'transform 0.3s ease-out',
+                        }}>
+                        <div className="overflow-hidden">
+                        <img width="" height="" alt="" src="/eventail.png" style={{transform: "scaleX(-1)"}} />
+                        </div>
+                        </div>
+                        
+                        <div className="overflow-hidden absolute bottom-0 right-0 z-0" style={{
+                            transform: `rotate(${Math.min(scrollY * 0.1, 200)}deg)`,
+                            transition: 'transform 0.3s ease-out',
+                            }}>
+                            <div className="">
+                            <img width="" height="" alt="" src="/eventail.png" />
+                            </div>
+                            </div> */}
+
+                    <div className='z-10'>
                         <div
                             className="items-center flex h-dvh"
                             style={{
-                                transform: `translateY(${Math.min(scrollY * 0.7, 200)}px)`, // Calcul du déplacement
-                                transition: 'transform 0.3s ease-out', // Transition fluide pour le mouvement
+                                transform: `translateY(${Math.min(scrollY * 0.7, 200)}px)`,
+                                transition: 'transform 0.3s ease-out',
                             }}
                         >
                             <div className="relative text-center w-full items-center justify-center flex">
@@ -40,11 +58,8 @@ function Hero() {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="heading__media" style={{ transform: "translate(-50%, 0%);" }}>
-                        <div className="heading__media__offset">
-                            <img width="2880" height="3770" alt="Two guys leaning against a vending machine, containing colourful cans." src="/city.webp" />
-                        </div>
-                    </div> */}
+
+
                 </div>
             </div>
         </section>
