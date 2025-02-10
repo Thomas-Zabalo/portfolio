@@ -3,13 +3,16 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import "../../prose.css";
 import Link from 'next/link';
-import { PageProps } from "next";
 
 interface Frontmatter {
   title: string;
 }
 
-export default async function ProjectPage({ params }: PageProps<{ slug: string }>) {
+interface PageProps {
+  params: { slug: string };
+}
+
+export default async function ProjectPage({ params }: PageProps) {
   if (!params || !params.slug) {
     return <p>Projet introuvable.</p>;
   }
