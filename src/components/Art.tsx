@@ -53,9 +53,6 @@ function Art() {
 
                             {/* Élément principal prenant 2 colonnes et 2 lignes */}
                             <div className="col-span-1 row-span-2 bg-[#fffdfb] hover:invert transition duration-300 ease-in-out rounded p-3">
-                                <div>
-                                    <img decoding="async" className="w-full h-auto" />
-                                </div>
                                 <div className='flex justify-between'>
                                     <div>
                                         <p className={`${anton.className}`}>2024/10/18</p>
@@ -65,19 +62,17 @@ function Art() {
                                         <p className={`${anton.className}`}>001</p>
                                     </div>
                                 </div>
-                                <div aria-hidden="true">
+                                <div aria-hidden="true" className='p-5'>
                                     <Image
+                                        className='rounded-sm'
                                         src="/Johnny.jpg"
-                                        alt="Image de Johnny &apos;Haliday&apos;" // Escape single quotes with &apos;
+                                        alt="Image de Johnny Haliday"
                                         width={300}
                                         height={200}
                                     />
                                 </div>
                             </div>
                             <div className="col-span-1 row-span-2 bg-[#fffdfb] hover:invert transition duration-300 ease-in-out rounded p-3">
-                                <div>
-                                    <img decoding="async" className="w-full h-auto" />
-                                </div>
                                 <div className='flex justify-between'>
                                     <div>
                                         <p className={`${anton.className}`}>2025/01/13</p>
@@ -87,19 +82,17 @@ function Art() {
                                         <p className={`${anton.className}`}>002</p>
                                     </div>
                                 </div>
-                                <div aria-hidden="true">
+                                <div aria-hidden="true" className='p-5'>
                                     <Image
+                                        className='rounded-sm'
                                         src="/Tower.jpg"
-                                        alt="Image d&apos;une tour de télécommunication" // Escape single quotes
+                                        alt="Image d' une tour de télécommunication"
                                         width={300}
                                         height={200}
                                     />
                                 </div>
                             </div>
                             <div className="col-span-1 row-span-2 bg-[#fffdfb] hover:invert transition duration-300 ease-in-out rounded p-3">
-                                <div>
-                                    <img decoding="async" className="w-full h-auto" />
-                                </div>
                                 <div className='flex justify-between'>
                                     <div>
                                         <p className={`${anton.className}`}>2025/01/23</p>
@@ -109,10 +102,11 @@ function Art() {
                                         <p className={`${anton.className}`}>003</p>
                                     </div>
                                 </div>
-                                <div aria-hidden="true">
+                                <div aria-hidden="true" className='p-5'>
                                     <Image
+                                        className='rounded-sm'
                                         src="/Red_House.jpg"
-                                        alt="Image d&apos;une maison rouge" // Escape single quotes
+                                        alt="Image d'une maison rouge"
                                         width={300}
                                         height={200}
                                     />

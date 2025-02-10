@@ -20,7 +20,7 @@ function Contact() {
                 </div>
             </div>
 
-            <div className='flex flex-col items-center text-center gap-10 pt-32 pb-36 px-8 lg:w-[84%] w-full border-[#e40038] lg:border-l-2 lg:border-r-2 border-t-2'>
+            <div className='flex flex-col items-center text-start gap-10 pt-32 pb-36 px-8 lg:w-[84%] w-full border-[#e40038] lg:border-l-2 lg:border-r-2 border-t-2'>
                 <div className="lg:w-1/2 w-full ">
                     <div className="mx-auto max-w-2xl text-center">
                         <div>

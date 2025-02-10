@@ -1,19 +1,17 @@
 // src/app/blog/layout.tsx
 import NavBar from '@/components/NavBar';
 import React from 'react';
-import localFont from 'next/font/local';
-const PP = localFont({ src: '../../fonts/PPNikkeiMaru-Ultrabold.otf' });
 
 
 const BlogLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <>
-                <NavBar />
-                <main className='py-10'>
-                    <div className='lg:px-32'>
-                        {children}
-                    </div>
-                </main>
+            <NavBar />
+            <main className='py-10'>
+                <div className='lg:px-32'>
+                    {children}
+                </div>
+            </main>
         </>
     );
 };
