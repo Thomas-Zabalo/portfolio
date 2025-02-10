@@ -1,6 +1,7 @@
 import React from 'react'
 import localFont from 'next/font/local';
 import { Anton } from 'next/font/google'
+import Image from 'next/image';
 const PP = localFont({ src: '../fonts/PPNikkeiMaru-Ultrabold.otf' });
 const anton = Anton({ weight: '400', subsets: ['latin'] })
 
@@ -48,10 +49,55 @@ function Art() {
                 <section className='w-full px-10 pb-10'>
 
                     <div className="grid w-full overflow-hidden relative p-0 flex-none justify-center ">
-                        <div className="grid xl:grid-cols-4 xl:grid-rows-2 md:grid-cols-3 md:grid-rows-2 grid-cols-2 grid-rows-2 auto-rows-fr min-w-[50px] gap-2">
+                        <div className="grid xl:grid-cols-3 xl:grid-rows-2 md:grid-cols-3 md:grid-rows-2 grid-cols-2 grid-rows-2 auto-rows-fr min-w-[50px] gap-2">
 
                             {/* Élément principal prenant 2 colonnes et 2 lignes */}
-                            <div className="col-span-2 row-span-2 bg-[#fffdfb] hover:invert transition duration-300 ease-in-out rounded p-3">
+                            <div className="col-span-1 row-span-2 bg-[#fffdfb] hover:invert transition duration-300 ease-in-out rounded p-3">
+                                <div>
+                                    <img decoding="async" className="w-full h-auto" />
+                                </div>
+                                <div className='flex justify-between'>
+                                    <div>
+                                        <p className={`${anton.className}`}>2024/10/18</p>
+                                    </div>
+                                    <div className='flex gap-2'>
+                                        <p className={`${anton.className}`}>ID</p>
+                                        <p className={`${anton.className}`}>001</p>
+                                    </div>
+                                </div>
+                                <div aria-hidden="true">
+                                    <Image
+                                        className='rounded-sm'
+                                        src={"/Johnny.jpg"}
+                                        alt='Image de Johnny Haliday'
+                                        width={300}
+                                        height={200}
+                                    />
+                                </div>
+                            </div>
+                            <div className="col-span-1 row-span-2 bg-[#fffdfb] hover:invert transition duration-300 ease-in-out rounded p-3">
+                                <div>
+                                    <img decoding="async" className="w-full h-auto" />
+                                </div>
+                                <div className='flex justify-between'>
+                                    <div>
+                                        <p className={`${anton.className}`}>2025/01/13</p>
+                                    </div>
+                                    <div className='flex gap-2'>
+                                        <p className={`${anton.className}`}>ID</p>
+                                        <p className={`${anton.className}`}>002</p>
+                                    </div>
+                                </div>
+                                <div aria-hidden="true">
+                                    <Image
+                                        src={"/Tower.jpg"}
+                                        alt="Image d'une tour de télécommunication"
+                                        width={300}
+                                        height={200}
+                                    />
+                                </div>
+                            </div>
+                            <div className="col-span-1 row-span-2 bg-[#fffdfb] hover:invert transition duration-300 ease-in-out rounded p-3">
                                 <div>
                                     <img decoding="async" className="w-full h-auto" />
                                 </div>
@@ -61,38 +107,18 @@ function Art() {
                                     </div>
                                     <div className='flex gap-2'>
                                         <p className={`${anton.className}`}>ID</p>
-                                        <p className={`${anton.className}`}>001</p>
+                                        <p className={`${anton.className}`}>003</p>
                                     </div>
                                 </div>
                                 <div aria-hidden="true">
-                                    <svg>
-                                        <use href="#svg9055733204"></use>
-                                    </svg>
+                                    <Image
+                                        src={"/Red_House.jpg"}
+                                        alt="Image d'une maison rouge"
+                                        width={300}
+                                        height={200}
+                                    />
                                 </div>
                             </div>
-
-                            {/* Deux autres éléments standard */}
-                            {[...Array(2)].map((_, index) => (
-                                <div key={index} className="bg-[#fffdfb] hover:invert transition duration-300 ease-in-out rounded p-3">
-                                    <div>
-                                        <img decoding="async" className="w-full h-auto" />
-                                    </div>
-                                    <div className='flex justify-between'>
-                                        <div>
-                                            <p className={`${anton.className}`}>2025/01/23</p>
-                                        </div>
-                                        <div className='flex gap-2'>
-                                            <p className={`${anton.className}`}>ID</p>
-                                            <p className={`${anton.className}`}>001</p>
-                                        </div>
-                                    </div>
-                                    <div aria-hidden="true">
-                                        <svg>
-                                            <use href="#svg9055733204"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            ))}
                         </div>
 
                     </div>

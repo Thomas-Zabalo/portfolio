@@ -1,0 +1,98 @@
+---
+title: "Todo App"
+date: "2024-11-10"
+---
+
+# Créer une Application Mobile « To-Do List » avec React Native : Fonctionnalités Complètes
+
+Dans cet article, nous allons voir comment créer une application mobile « To-Do List » avec React Native, en intégrant plusieurs fonctionnalités essentielles, telles que la gestion des tâches (ajout, suppression, modification), l’authentification des utilisateurs, la gestion des notifications et la gestion des tâches hors ligne avec synchronisation une fois l’internet disponible.
+
+## 1. Introduction à React Native
+React Native est un framework développé par Facebook qui permet de créer des applications mobiles en utilisant JavaScript et React. Il offre une expérience native tout en permettant aux développeurs de réutiliser une partie du code entre les plateformes iOS et Android.
+
+## 2. Fonctionnalités de l’Application To-Do List
+Dans cet exemple, l’application comprendra les fonctionnalités suivantes :
+
+- **Connexion et gestion des utilisateurs**
+- **Ajout, modification et suppression de tâches**
+- **Notifications pour rappeler les tâches à accomplir**
+- **Gestion des tâches hors ligne, avec synchronisation lorsqu’il y a une connexion Internet**
+
+## 3. Initialisation du Projet
+
+### a. Créer un nouveau projet React Native
+Si vous n’avez pas encore installé React Native, vous pouvez utiliser le CLI ou Expo pour créer un nouveau projet. Expo est une option plus simple pour démarrer rapidement, surtout pour les débutants.
+
+#### Pour créer un projet avec Expo :
+
+```bash
+npx create-expo-app TodoApp
+cd TodoApp
+```
+
+Si vous préférez utiliser React Native CLI :
+
+```bash
+npx react-native init TodoApp
+cd TodoApp
+```
+
+## 4. Connexion de l’utilisateur
+L’authentification des utilisateurs peut être réalisée en utilisant Firebase Authentication ou une autre solution d’authentification telle que Auth0.
+
+### a. Installer Firebase
+Installe Firebase pour gérer l’authentification et la base de données :
+
+```bash
+npm install firebase
+```
+
+Ensuite, configure Firebase dans ton projet en ajoutant ton fichier de configuration Firebase et en initialisant le SDK Firebase.
+
+### b. Création d’un composant de connexion
+Dans un fichier `LoginScreen.js`, tu peux créer un formulaire simple pour l’authentification des utilisateurs.
+
+## 5. Gestion des Tâches
+Pour gérer les tâches (ajout, modification, suppression), tu peux utiliser une base de données comme Firebase Firestore, qui offre une synchronisation en temps réel et permet une gestion fluide des données.
+
+### b. Ajouter une tâche
+Pour ajouter une tâche, tu peux créer un formulaire simple qui enregistre les informations dans Firestore.
+
+### c. Modifier et supprimer une tâche
+Les actions de modification et de suppression peuvent être implémentées en utilisant les méthodes de mise à jour et de suppression de Firestore.
+
+## 6. Notifications
+Pour implémenter des notifications, tu peux utiliser `react-native-push-notification` ou `Expo Notifications` si tu utilises Expo.
+
+### a. Installer les notifications
+Avec Expo, tu peux utiliser le package `expo-notifications` :
+
+```bash
+expo install expo-notifications
+```
+
+Ensuite, configure et demande les permissions pour les notifications, puis programme-les pour chaque tâche avec une échéance.
+
+### b. Envoi de notifications
+Tu peux envoyer une notification locale à l’utilisateur lorsque la date d’échéance approche. Par exemple, une notification quotidienne pour rappeler les tâches non terminées.
+
+## 7. Gestion des Tâches Hors Ligne avec Synchronisation
+Une fonctionnalité intéressante est la possibilité d’ajouter des tâches même lorsque l’utilisateur est hors ligne, puis de les synchroniser automatiquement dès que la connexion à Internet est rétablie.
+
+### a. Utiliser NetInfo
+La bibliothèque `@react-native-community/netinfo` permet de détecter l’état de la connexion Internet. Voici comment l’utiliser pour vérifier la connexion et gérer les tâches hors ligne.
+
+```bash
+npm install @react-native-community/netinfo
+```
+
+Ensuite, tu peux utiliser l’API `NetInfo` pour détecter si l’utilisateur est connecté ou non, et stocker temporairement les tâches dans une base de données locale (comme SQLite ou AsyncStorage) jusqu’à ce qu’une connexion Internet soit disponible.
+
+### b. Synchronisation des tâches
+Une fois la connexion rétablie, tu peux utiliser Firestore pour synchroniser les tâches stockées localement avec la base de données en ligne.
+
+## 8. Test et Déploiement
+Une fois que toutes les fonctionnalités sont intégrées, il est important de tester ton application sur différents appareils et simulateurs. Utilise l’outil Expo si tu travailles avec Expo ou Xcode/Android Studio pour tester sur des appareils réels.
+
+## 9. Conclusion
+Créer une application To-Do List avec React Native est un projet intéressant qui te permettra de découvrir les bases du développement mobile, l’intégration de Firebase, la gestion des notifications et la gestion des tâches hors ligne. En suivant ce guide, tu devrais être en mesure de construire une application complète, performante et utile pour les utilisateurs.

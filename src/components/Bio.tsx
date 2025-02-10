@@ -1,6 +1,7 @@
 import React from 'react'
 import localFont from 'next/font/local';
 import { Anton } from 'next/font/google'
+import Image from 'next/image';
 const PP = localFont({ src: '../fonts/PPNikkeiMaru-Ultrabold.otf' });
 const anton = Anton({ weight: '400', subsets: ['latin'] })
 
@@ -22,30 +23,60 @@ function Bio() {
                 </div>
             </div>
 
-            <div className='flex flex-col items-center text-center gap-10 pt-32 pb-36 px-8 lg:w-[84%] w-full border-[#e40038] lg:border-l-2 lg:border-r-2 border-t-2'>
-                <div className='flex md:flex-row justify-between w-[80%] flex-col'>
-                    <div>
-                        <div>
-                            <h3 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Nom</h3>
+            <div className='flex flex-col  justify-between items-center text-center gap-10 pt-32 pb-36 px-8 lg:w-[84%] w-full border-[#e40038] lg:border-l-2 lg:border-r-2 border-t-2'>
+                <div className="flex justify-around w-full items-center">
+                    <div className={`${PP.className} text-[#e40038] flex flex-col gap-10`}  >
+                        <div className="" >
+                            <div className="" >
+                                <h6 className="text-xl" >Nom</h6>
+                            </div>
+                            <div className="text-3xl">
+                                <h5 className="">ZABALO</h5>
+                            </div>
                         </div>
-                        <div>
-                            <h2 className={`${PP.className} text-4xl leading-[136%] text-[#e40038]`}> ZABALO</h2>
+                        <div className="">
+                            <div className="text-xl">
+                                <h6 className="">Age</h6>
+                            </div>
+                            <div className="">
+                                <div className="" >
+                                    <h5 className="text-3xl" >20 ans</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="">
+                                <h6 className="text-xl">Lieux</h6>
+                            </div>
+                            <div className="" >
+                                <h5 className="text-3xl">France</h5>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <h3 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Prenom</h3>
+                    <div className={`${PP.className} text-[#e40038] flex flex-col gap-10`}  >
+                        <div className="" >
+                            <div className="" >
+                                <h6 className="text-xl">Prenom</h6>
+                            </div>
+                            <div className="" >
+                                <h5 className="text-3xl">Thomas</h5>
+                            </div>
                         </div>
-                        <div>
-                            <h2 className={`${PP.className} text-4xl leading-[136%] text-[#e40038]`}>THOMAS</h2>
+                        <div className="" >
+                            <div className="">
+                                <h6 className="text-xl">Spécialité</h6>
+                            </div>
+                            <div className="">
+                                <h5 className="text-3xl">Développement Front-end</h5>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
-                            <h3 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Age</h3>
-                        </div>
-                        <div>
-                            <h2 className={`${PP.className} text-4xl leading-[136%] text-[#e40038]`}>20</h2>
+                        <div className="">
+                            <div className="" >
+                                <h6 className="text-xl" >Style</h6>
+                            </div>
+                            <div className="">
+                                <h5 className="text-3xl" >Minimaliste & Moderne</h5>
+                            </div>
                         </div>
                     </div>
                 </div>

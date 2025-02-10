@@ -7,36 +7,25 @@ export function useSmoothScroll() {
     let scrollY = window.scrollY;
     let speed = 0;
     let isScrolling = false;
-    let lastDeltaY = 0;
-    let usingTrackpad = false;
 
     const handleWheel = (e: WheelEvent) => {
+      if (e.ctrlKey) return; // Laisse le zoom avec Ctrl + Scroll
       e.preventDefault();
 
-      // Détection du trackpad (valeurs faibles et fréquentes)
-      if (Math.abs(e.deltaY) < 15) {
-        usingTrackpad = true;
-      } else {
-        usingTrackpad = false;
-      }
-
-      // Ajuster la sensibilité selon la source
-      const sensitivity = 0.02;
+      const sensitivity = 0.05; // Ajuste la sensibilité pour plus de fluidité
       speed += e.deltaY * sensitivity;
 
       if (!isScrolling) {
         isScrolling = true;
         smoothScroll();
       }
-
-      lastDeltaY = e.deltaY;
     };
 
     const smoothScroll = () => {
       if (Math.abs(speed) > 0.5) {
-        scrollY += speed;
-        speed *= 0.9; // Effet d’inertie pour ralentir progressivement
-        window.scrollTo(0, scrollY);
+        scrollY = Math.max(0, scrollY + speed); // Empêche les valeurs négatives
+        speed *= 0.9; // Effet d’inertie
+        window.scrollTo({ top: scrollY, behavior: "instant" });
         requestAnimationFrame(smoothScroll);
       } else {
         isScrolling = false;

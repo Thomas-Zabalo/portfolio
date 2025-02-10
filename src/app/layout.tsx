@@ -17,8 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className="scroll-smooth">
-      <body className={`${anton.className} antialiased overflow-x-hidden`}>
+      <body className={`antialiased overflow-x-hidden`}>
         {/* <SmoothScrollWrapper /> */}
+       
         {children}
       </body>
     </html>

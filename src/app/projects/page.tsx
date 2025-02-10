@@ -31,7 +31,7 @@ export default function BlogPage() {
       <ul>
         {posts.map(({ slug, title, date }) => (
           <li key={slug}>
-            <Link href={`/blog/${slug}`}>
+            <Link href={`/projects/${slug}`}>
               <div className='flex flex-col'>
                 <div className='contents'>
                   <div className='w-full h-auto relative flex-none bg-transparent hover:bg-[#e40038] text-[#e40038] hover:text-[#faf3e9] transition-all duration-700 border-b-2 border-[#e40038]'>
@@ -40,7 +40,7 @@ export default function BlogPage() {
                         <div>
                           <div className={`${PP.className}  md:text-5xl text-3xl`}>
                             <h3>
-                              {title}
+                              {title.length > 45 ? `${title.slice(0, 45)}...` : title}
                             </h3>
                           </div>
                           <div className={`${anton.className}text-xl`}>

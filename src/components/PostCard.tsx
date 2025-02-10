@@ -33,7 +33,7 @@ const PostCard: React.FC<PostCardProps> = ({ }) => {
                 <ul>
                     {posts.slice(0, 5).map(({ slug, title, date }, index) => (
                         <li key={slug} className={index === posts.length - 1 ? 'no-border' : ''}>
-                            <Link href={`/blog/${slug}`}>
+                            <Link href={`/projects/${slug}`}>
                                 <div className='flex flex-col'>
                                     <div className='contents'>
                                         <div className={`w-full h-auto relative flex-none bg-transparent hover:bg-[#e40038] text-[#e40038] hover:text-[#faf3e9] transition-all duration-700 ${index === posts.length - 1 ? '' : 'border-b-2 border-[#e40038]'}`}>                                            <div className='p-4 flex flex-col flex-nowrap h-min justify-start'>
@@ -41,7 +41,7 @@ const PostCard: React.FC<PostCardProps> = ({ }) => {
                                                 <div>
                                                     <div className={`${PP.className}  md:text-5xl text-3xl`}>
                                                         <h3>
-                                                            {title}
+                                                            {title.length > 45 ? `${title.slice(0, 45)}...` : title}
                                                         </h3>
                                                     </div>
                                                     <div className={`${anton.className}text-xl`}>

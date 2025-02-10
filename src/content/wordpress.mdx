@@ -1,0 +1,154 @@
+---
+title: "Création d'un thème Wordpress"
+date: "2025-02-10"
+---
+
+## Créer un Thème WordPress : Un Guide Complet
+
+### Introduction
+
+Créer un thème WordPress personnalisé peut être une excellente opportunité pour mettre en pratique vos compétences en développement web. Que ce soit pour un projet étudiant ou pour créer un site web personnel, développer un thème WordPress vous permettra de mieux comprendre comment fonctionne le CMS le plus populaire au monde. Dans cet article, nous allons voir les étapes de la création d’un thème WordPress, les fichiers essentiels à inclure et comment intégrer des technologies modernes comme MDX pour enrichir votre contenu.
+
+### 1. Préparer l’Environnement de Développement
+
+Avant de commencer, il est important de préparer votre environnement de développement. Si vous travaillez sur un projet local, voici les outils que vous devez installer :
+- **XAMPP** ou **MAMP** : Des serveurs locaux pour faire tourner WordPress sur votre machine.
+- **Éditeur de code** : Utilisez un éditeur de code comme **VS Code** ou **Sublime Text** pour écrire votre code.
+
+### 2. Créer un Nouveau Dossier pour le Thème
+
+Dans votre répertoire WordPress, allez dans `wp-content/themes/` et créez un nouveau dossier pour votre thème. Par exemple, nommez-le `mon-theme`.
+
+### 3. Fichiers Essentiels du Thème
+
+#### a. **style.css**
+
+Le fichier `style.css` contient les informations principales sur votre thème et est également utilisé pour définir le style de votre site. Voici la structure de base de ce fichier :
+
+```css
+/*
+Theme Name: Mon Thème
+Theme URI: http://example.com
+Author: Votre Nom
+Author URI: http://example.com
+Description: Un thème WordPress personnalisé pour mon portfolio.
+Version: 1.0
+License: GPL2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mon-theme
+*/
+```
+
+#### b. **index.php**
+
+Le fichier `index.php` est le point de départ de votre thème. Voici un exemple simple :
+
+```php
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php bloginfo( 'name' ); ?></title>
+    <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+    <header>
+        <h1><?php bloginfo( 'name' ); ?></h1>
+        <p><?php bloginfo( 'description' ); ?></p>
+    </header>
+
+    <main>
+        <?php
+            if ( have_posts() ) :
+                while ( have_posts() ) : the_post();
+                    the_title( '<h2>', '</h2>' );
+                    the_content();
+                endwhile;
+            endif;
+        ?>
+    </main>
+
+    <footer>
+        <p>&copy; <?php echo date( 'Y' ); ?> - <?php bloginfo( 'name' ); ?></p>
+    </footer>
+
+    <?php wp_footer(); ?>
+</body>
+</html>
+```
+
+#### c. **functions.php**
+
+Le fichier `functions.php` permet d'ajouter des fonctionnalités à votre thème. Par exemple, pour activer les menus et les images à la une :
+
+```php
+<?php
+function mon_theme_setup() {
+    add_theme_support( 'post-thumbnails' ); // Images à la une
+    register_nav_menus( array( 'primary' => __( 'Menu Principal', 'mon-theme' ) ) ); // Menu
+}
+add_action( 'after_setup_theme', 'mon_theme_setup' );
+
+function mon_theme_enqueue_styles() {
+    wp_enqueue_style( 'mon-theme-style', get_stylesheet_uri() );
+}
+add_action( 'wp_enqueue_scripts', 'mon_theme_enqueue_styles' );
+?>
+```
+
+### 4. Ajouter MDX à votre Thème WordPress
+
+MDX (Markdown avec JSX) peut être intégré dans un projet WordPress pour offrir des contenus dynamiques avec une syntaxe simple. Pour utiliser MDX dans WordPress, vous devez installer un plugin comme **MDX Plugin** ou utiliser un environnement comme **Next.js** pour votre blog.
+
+Voici comment ajouter un contenu dynamique en MDX dans un bloc WordPress avec un plugin :
+
+- Installez le plugin **WPGraphQL for MDX**.
+- Utilisez MDX pour créer des articles en Markdown avec des composants React, ce qui vous permettra d'ajouter des éléments interactifs dans votre blog.
+
+Exemple d'utilisation de MDX pour un article :
+
+```mdx
+import { MyComponent } from '../components'
+
+# Bienvenue sur mon blog
+
+Voici un exemple de contenu en **MDX** !
+
+<MyComponent />
+```
+
+Cela permet d'ajouter des composants interactifs ou des données dynamiques à votre site WordPress de manière simple et intuitive.
+
+### 5. Ajouter un Menu de Navigation
+
+Un menu de navigation est essentiel pour une expérience utilisateur fluide. Ajoutez un menu en utilisant la fonction `wp_nav_menu()` dans le fichier `header.php` de votre thème.
+
+```php
+<?php
+    wp_nav_menu( array(
+        'theme_location' => 'primary',
+        'container' => 'nav',
+        'container_class' => 'main-menu',
+    ) );
+?>
+```
+
+### 6. Personnaliser le Thème avec Tailwind CSS
+
+Si vous souhaitez utiliser Tailwind CSS pour votre thème, vous pouvez l'intégrer facilement en installant Tailwind via npm ou en l'ajoutant directement dans votre fichier `style.css`. Si vous souhaitez l'installer via npm, suivez les étapes suivantes :
+1. Initialisez un projet Node.js dans le dossier de votre thème.
+2. Installez Tailwind CSS avec npm.
+
+Exemple d'installation via npm :
+
+```bash
+npm init -y
+npm install tailwindcss
+```
+
+Créez un fichier de configuration `tailwind.config.js` et personnalisez-le selon vos besoins.
+
+### Conclusion
+
+Créer un thème WordPress personnalisé vous permet non seulement de renforcer vos compétences en développement web, mais aussi de mieux comprendre les technologies qui composent un site web moderne. En combinant MDX, WordPress et des outils comme Tailwind CSS, vous pouvez créer un site qui allie esthétique, performance et interactivité. N'hésitez pas à personnaliser chaque aspect de votre thème pour qu'il reflète pleinement votre style et vos compétences !

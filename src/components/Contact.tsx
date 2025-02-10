@@ -29,9 +29,9 @@ function Contact() {
                     </div>
                     <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20 text-[#e40038]">
                         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                            <div>
+                            <div className="sm:col-span-2">
                                 <label htmlFor="first-name" className="block text-sm/6 font-semibold ">
-                                    First name
+                                    Nom
                                 </label>
                                 <div className="mt-2.5">
                                     <input
@@ -39,34 +39,6 @@ function Contact() {
                                         name="first-name"
                                         type="text"
                                         autoComplete="given-name"
-                                        className="block w-full rounded-md bg-white px-3.5 py-2 text-base  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#e40038]"
-                                    />
-                                </div>
-                            </div>
-                            <div>
-                                <label htmlFor="last-name" className="block text-sm/6 font-semibold ">
-                                    Last name
-                                </label>
-                                <div className="mt-2.5">
-                                    <input
-                                        id="last-name"
-                                        name="last-name"
-                                        type="text"
-                                        autoComplete="family-name"
-                                        className="block w-full rounded-md bg-white px-3.5 py-2 text-base  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#e40038]"
-                                    />
-                                </div>
-                            </div>
-                            <div className="sm:col-span-2">
-                                <label htmlFor="company" className="block text-sm/6 font-semibold ">
-                                    Company
-                                </label>
-                                <div className="mt-2.5">
-                                    <input
-                                        id="company"
-                                        name="company"
-                                        type="text"
-                                        autoComplete="organization"
                                         className="block w-full rounded-md bg-white px-3.5 py-2 text-base  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#e40038]"
                                     />
                                 </div>
@@ -85,7 +57,7 @@ function Contact() {
                                     />
                                 </div>
                             </div>
-                         
+
                             <div className="sm:col-span-2">
                                 <label htmlFor="message" className="block text-sm/6 font-semibold ">
                                     Message
@@ -106,7 +78,7 @@ function Contact() {
                                 type="submit"
                                 className="block w-full rounded-md bg-[#e40038] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-[#e40039e0] focus-visible:outline-2"
                             >
-                                Let's talk
+                                Envoyer
                             </button>
                         </div>
                     </form>

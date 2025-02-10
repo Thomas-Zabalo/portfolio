@@ -42,10 +42,11 @@ function Project() {
                         <h2 className={`${PP.className} flex justify-center xl:text-[260px] lg:text-[180px] md:text-9xl text-5xl leading-[96%] text-[#e40038]`}>PROJETS</h2>
                     </div>
                     <div className='flex flex-col justify-start flex-shrink-0 max-w-[500px] min-w-[300px] relative w-full text-balance'>
-                        <Link href={`/blog`} className='bg-transparent hover:bg-[#e40038] text-[#e40038] hover:text-[#faf3e9]  transition-all duration-700'>
-                            <p>
+                        <Link href={`/projects`} className='transition-all duration-700'>
+                            <button className="px-6 py-2 bg-[#e40038] text-[#faf3e9]  rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
                                 Voir tous les projets
-                            </p>
+                            </button>
+
                         </Link>
                     </div>
                 </section>
