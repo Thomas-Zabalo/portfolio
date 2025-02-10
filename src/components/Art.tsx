@@ -49,7 +49,7 @@ function Art() {
                 <section className='w-full px-10 pb-10'>
 
                     <div className="grid w-full overflow-hidden relative p-0 flex-none justify-center ">
-                        <div className="grid xl:grid-cols-3 xl:grid-rows-2 md:grid-cols-3 md:grid-rows-2 grid-cols-2 grid-rows-2 auto-rows-fr min-w-[50px] gap-2">
+                        <div className="grid xl:grid-cols-3 xl:grid-rows-2 md:grid-cols-2 md:grid-rows-2 grid-cols-1 grid-rows-1 auto-rows-fr min-w-[50px] gap-2">
 
                             {/* Élément principal prenant 2 colonnes et 2 lignes */}
                             <div className="col-span-1 row-span-2 bg-[#fffdfb] hover:invert transition duration-300 ease-in-out rounded p-3">
