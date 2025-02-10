@@ -12,21 +12,21 @@ function Project() {
 
             <div className="self-stretch flex-none h-auto relative w-[8%] lg:block hidden lg:border-b-2 lg:border-[#e40038]" style={{ transform: "rotate(180deg)" }}>
                 <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative" data-framer-name="Variant 1">
-                    <div className="gap-80 flex" style={{ transform: "rotate(90deg)", opacity: 1 }}>
+                    <div className="flex gap-40" style={{ transform: "rotate(90deg)", opacity: 1 }}>
                         <div className='gap-40 flex'>
                             <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Projets</h6>
                             </div>
                             <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>03/05</h6>
                             </div>
                         </div>
                         <div className='gap-40 flex'>
                             <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Projets</h6>
                             </div>
                             <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>03/05</h6>
                             </div>
                         </div>
                     </div>
@@ -56,21 +56,21 @@ function Project() {
 
             <div className="self-stretch flex-none h-auto relative w-[8%] lg:block hidden lg:border-b-2 lg:border-[#e40038]" style={{ transform: "rotate(180deg)" }}>
                 <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative">
-                    <div className="gap-80 flex" style={{ transform: "rotate(270deg)", opacity: 1 }}>
+                    <div className="gap-40 flex" style={{ transform: "rotate(270deg)", opacity: 1 }}>
                         <div className='gap-40 flex'>
                             <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>03/05</h6>
                             </div>
                             <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Projets</h6>
                             </div>
                         </div>
                         <div className='gap-40 flex'>
                             <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>03/05</h6>
                             </div>
                             <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Projets</h6>
                             </div>
                         </div>
                     </div>

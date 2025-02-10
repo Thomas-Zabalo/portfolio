@@ -12,10 +12,10 @@ function Contact() {
                 <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative" data-framer-name="Variant 1">
                     <div className="gap-40 flex" style={{ transform: "rotate(90deg)", opacity: 1 }}>
                         <div className="">
-                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Contact</h6>
                         </div>
                         <div className="">
-                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>05/05</h6>
                         </div>
                     </div>
                 </div>
@@ -37,10 +37,10 @@ function Contact() {
                 <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative" data-framer-name="Variant 1">
                     <div className="gap-40 flex" style={{ transform: "rotate(270deg)", opacity: 1 }}>
                         <div className="">
-                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>05/05</h6>
                         </div>
                         <div className="">
-                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Contact</h6>
                         </div>
                     </div>
                 </div>

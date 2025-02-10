@@ -14,7 +14,7 @@ function NavBar() {
             <div id='akitomo-navbar' className='flex items-center justify-between'>
                 <div>
                     <div id='BrandName'>
-                        <h1 className={`${PP.className}  text-[#e40038] `}><a href=''>AKITOMO</a></h1>
+                        <h1 className={`${PP.className}  text-[#e40038] `}><a href='#'>AKITOMO</a></h1>
                     </div>
                 </div>
                 <div className='flex'>

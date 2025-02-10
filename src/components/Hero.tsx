@@ -22,24 +22,6 @@ function Hero() {
         <section>
             <div className="">
                 <div className="overflow-hidden">
-                    <div className="overflow-hidden absolute bottom-0 left-0 z-0" style={{
-                        transform: `rotate(${Math.min(scrollY * -0.1, 200)}deg)`,
-                        transition: 'transform 0.3s ease-out',
-                        }}>
-                        <div className="overflow-hidden">
-                        <img width="" height="" alt="" src="/eventail.png" style={{transform: "scaleX(-1)"}} />
-                        </div>
-                        </div>
-                        
-                        <div className="overflow-hidden absolute bottom-0 right-0 z-0" style={{
-                            transform: `rotate(${Math.min(scrollY * 0.1, 200)}deg)`,
-                            transition: 'transform 0.3s ease-out',
-                            }}>
-                            <div className="">
-                            <img width="" height="" alt="" src="/eventail.png" />
-                            </div>
-                            </div>
-
                     <div className='z-10'>
                         <div
                             className="items-center flex h-dvh"

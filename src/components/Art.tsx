@@ -5,7 +5,7 @@ const PP = localFont({ src: '../fonts/PPNikkeiMaru-Ultrabold.otf' });
 const anton = Anton({ weight: '400', subsets: ['latin'] })
 
 function Art() {
-    
+
     return (
         <section className='flex items-center flex-row justify-center' id='art'>
 
@@ -14,18 +14,18 @@ function Art() {
                     <div className="gap-80 flex" style={{ transform: "rotate(90deg)", opacity: 1 }}>
                         <div className='gap-40 flex'>
                             <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Art</h6>
                             </div>
                             <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>04/05</h6>
                             </div>
                         </div>
                         <div className='gap-40 flex'>
                             <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Art</h6>
                             </div>
                             <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>04/05</h6>
                             </div>
                         </div>
                     </div>
@@ -138,7 +138,7 @@ function Art() {
                             ))}
 
 
-                            <div className="col-span-2 row-span-2 bg-[#fffdfb] hover:invert transition duration-300 ease-in-out transition duration-700 ease-in-out rounded p-3">
+                            <div className="col-span-2 row-span-2 bg-[#fffdfb] hover:invert transition duration-700 ease-in-out rounded p-3">
                                 <div>
                                     <img decoding="async" className="w-full h-auto" />
                                 </div>
@@ -158,7 +158,7 @@ function Art() {
                                 </div>
                             </div>
 
-                            <div className="col-span-2 row-span-1 bg-[#fffdfb] hover:invert transition duration-300 ease-in-out transition duration-700 ease-in-out rounded p-3">
+                            <div className="col-span-2 row-span-1 bg-[#fffdfb] hover:invert transition duration-700 ease-in-out rounded p-3">
                                 <div>
                                     <img decoding="async" className="w-full h-auto" />
                                 </div>
@@ -190,18 +190,18 @@ function Art() {
                     <div className="gap-80 flex" style={{ transform: "rotate(270deg)", opacity: 1 }}>
                         <div className='gap-40 flex'>
                             <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>04/05</h6>
                             </div>
                             <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Art</h6>
                             </div>
                         </div>
                         <div className='gap-40 flex'>
                             <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>04/05</h6>
                             </div>
                             <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Art</h6>
                             </div>
                         </div>
                     </div>
