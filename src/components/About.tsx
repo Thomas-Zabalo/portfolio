@@ -24,10 +24,10 @@ function About() {
 
             <div className='flex flex-col items-center text-center gap-10 pt-32 pb-36 px-8 lg:w-[84%] w-full border-[#e40038] lg:border-l-2 lg:border-r-2 border-t-2'>
                 <div className='flex flex-col justify-start flex-shrink-0 max-w-[900px] min-w-[300px] relative w-full text-balance'>
-                    <h4 className={`${PP.className} md:text-5xl text-3xl leading-[96%] text-[#e40038]`}>Oda Nobunaga is known as the first great unifier of japan - a daimyō who overthrew the ashikaga shogunate and ended years of feudal wars in japan</h4>
+                    <h4 className={`${PP.className} md:text-5xl text-3xl leading-[96%] text-[#e40038]`}>Créer des expériences web captivantes, alliant technologie et design.</h4>
                 </div>
                 <div className='flex flex-col justify-start flex-shrink-0 max-w-[500px] min-w-[300px] relative w-full text-balance'>
-                    <p className={`${anton.className} text-lg leading-[136%] text-[#e40038]`}>He is said to be a tall, thin, and scantily bearded man. He is highly ambitious which made him ruthless but he is also said to be a realistic leader, admired for his ability to make difficult decisions.</p>
+                    <p className={`${anton.className} text-lg leading-[136%] text-[#e40038]`}>Je suis Thomas, développeur front-end et étudiant passionné par la conception d’interfaces modernes et interactives. Toujours en quête d’innovation, j’explore les technologies web pour proposer des expériences immersives et performantes.</p>
                 </div>
             </div>
 

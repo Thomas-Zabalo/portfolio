@@ -3,6 +3,7 @@ import React from 'react'
 import localFont from 'next/font/local';
 import { Anton } from 'next/font/google'
 import Image from 'next/image';
+import Link from 'next/link';
 
 const PP = localFont({ src: '../fonts/PPNikkeiMaru-Ultrabold.otf' });
 const anton = Anton({ weight: '400', subsets: ['latin'] })
@@ -14,17 +15,27 @@ function NavBar() {
             <div id='akitomo-navbar' className='flex items-center justify-between'>
                 <div>
                     <div id='BrandName'>
-                        <h1 className={`${PP.className}  text-[#e40038] `}><a href='#'>AKITOMO</a></h1>
+                        <h1 className={`${PP.className}  text-[#e40038] `}> <Link href="/">AKITOMO</Link></h1>
                     </div>
                 </div>
                 <div className='flex'>
                     <nav>
-                        <ul className='flex'>
-                            <li className={`${anton.className}  text-[#e40038] pr-4`}><a href="#">ACCUEIL</a></li>
-                            <li className={`${anton.className}  text-[#e40038] pr-4`}><a href="#propos">A PROPOS</a></li>
-                            <li className={`${anton.className}  text-[#e40038] pr-4`}><a href="#projets">PROJETS</a></li>
-                            <li className={`${anton.className}  text-[#e40038] pr-4`}><a href="#art">ART</a></li>
-                            <li className={`${anton.className}  text-[#e40038] pr-4`}><a href="#contact">CONTACT</a></li>
+                        <ul className='md:flex hidden'>
+                            <li className={`${anton.className} text-[#e40038] pr-4`}>
+                                <Link href="/">ACCUEIL</Link>
+                            </li>
+                            <li className={`${anton.className} text-[#e40038] pr-4`}>
+                                <Link href="/#propos">A PROPOS</Link>
+                            </li>
+                            <li className={`${anton.className} text-[#e40038] pr-4`}>
+                                <Link href="/#projets">PROJETS</Link>
+                            </li>
+                            <li className={`${anton.className} text-[#e40038] pr-4`}>
+                                <Link href="/#art">ART</Link>
+                            </li>
+                            <li className={`${anton.className} text-[#e40038] pr-4`}>
+                                <Link href="/#contact">CONTACT</Link>
+                            </li>
                         </ul>
                     </nav>
                 </div>

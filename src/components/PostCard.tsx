@@ -13,7 +13,7 @@ interface PostCardProps {
 }
 
 const PostCard: React.FC<PostCardProps> = ({ }) => {
-    const postsDirectory = path.join(process.cwd(), 'src/posts');
+    const postsDirectory = path.join(process.cwd(), 'src/content');
     const filenames = fs.readdirSync(postsDirectory);
 
     const posts = filenames.map((filename) => {
@@ -24,7 +24,7 @@ const PostCard: React.FC<PostCardProps> = ({ }) => {
         return {
             slug: filename.replace('.mdx', ''),
             title: data.title,
-            date: data.publishedAt,
+            date: data.date,
         };
     });
     return (

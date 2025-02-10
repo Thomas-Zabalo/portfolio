@@ -16,9 +16,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr">
+    <html lang="fr" className="scroll-smooth">
       <body className={`${anton.className} antialiased overflow-x-hidden`}>
-        <SmoothScrollWrapper />
+        {/* <SmoothScrollWrapper /> */}
         {children}
       </body>
     </html>

@@ -8,7 +8,7 @@ const PP = localFont({ src: '../../fonts/PPNikkeiMaru-Ultrabold.otf' });
 const anton = Anton({ weight: '400', subsets: ['latin'] })
 
 export default function BlogPage() {
-  const postsDirectory = path.join(process.cwd(), 'src/posts');
+  const postsDirectory = path.join(process.cwd(), 'src/content');
   const filenames = fs.readdirSync(postsDirectory);
 
   const posts = filenames.map((filename) => {
@@ -19,12 +19,15 @@ export default function BlogPage() {
     return {
       slug: filename.replace('.mdx', ''),
       title: data.title,
-      date: data.publishedAt,
+      date: data.date,
     };
   });
 
   return (
     <div>
+      <div className='flex flex-col items-center text-center pt-32 pb-36 px-8 w-full border-[#e40038]'>
+        <h1 className={`${PP.className} md:text-6xl text-3xl text-[#e40038]`}>Projets</h1>
+      </div>
       <ul>
         {posts.map(({ slug, title, date }) => (
           <li key={slug}>
