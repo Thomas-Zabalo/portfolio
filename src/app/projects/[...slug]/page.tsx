@@ -8,16 +8,14 @@ interface Frontmatter {
   title: string;
 }
 
-interface PageProps {
-  params: { slug: string };
-}
+export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
 
-export default async function ProjectPage({ params }: PageProps) {
-  if (!params || !params.slug) {
+  if (!resolvedParams?.slug) {
     return <p>Projet introuvable.</p>;
   }
 
-  const filePath = path.join(process.cwd(), 'src/content', `${params.slug}.mdx`);
+  const filePath = path.join(process.cwd(), 'src/content', `${resolvedParams.slug}.mdx`);
 
   try {
     const content = await fs.readFile(filePath, 'utf-8');

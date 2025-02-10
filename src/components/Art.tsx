@@ -69,6 +69,7 @@ function Art() {
                                         alt="Image de Johnny Haliday"
                                         width={300}
                                         height={200}
+                                        style={{ width: "auto", height: "auto" }}
                                     />
                                 </div>
                             </div>
@@ -88,7 +89,7 @@ function Art() {
                                         src="/Tower.jpg"
                                         alt="Image d' une tour de télécommunication"
                                         width={300}
-                                        height={200}
+                                        height={200} style={{ width: "auto", height: "auto" }}
                                     />
                                 </div>
                             </div>
@@ -109,6 +110,7 @@ function Art() {
                                         alt="Image d'une maison rouge"
                                         width={300}
                                         height={200}
+                                        style={{ width: "auto", height: "auto" }}
                                     />
                                 </div>
                             </div>
