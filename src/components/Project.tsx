@@ -1,12 +1,14 @@
 import React from 'react'
 import localFont from 'next/font/local';
 import { Anton } from 'next/font/google'
+import PostCard from './PostCard';
+import Link from 'next/link';
 const PP = localFont({ src: '../fonts/PPNikkeiMaru-Ultrabold.otf' });
 const anton = Anton({ weight: '400', subsets: ['latin'] })
 
 function Project() {
     return (
-        <section className='flex items-center flex-row justify-center'>
+        <section className='flex items-center flex-row justify-center' id='projets'>
 
             <div className="self-stretch flex-none h-auto relative w-[8%] lg:block hidden lg:border-b-2 lg:border-[#e40038]" style={{ transform: "rotate(180deg)" }}>
                 <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative" data-framer-name="Variant 1">
@@ -40,100 +42,20 @@ function Project() {
                         <h2 className={`${PP.className} flex justify-center xl:text-[260px] lg:text-[180px] md:text-9xl text-5xl leading-[96%] text-[#e40038]`}>PROJETS</h2>
                     </div>
                     <div className='flex flex-col justify-start flex-shrink-0 max-w-[500px] min-w-[300px] relative w-full text-balance'>
-                        <p className={`${anton.className} text-lg leading-[136%] text-[#e40038]`}>He is said to be a tall, thin, and scantily bearded man. He is highly ambitious which made him ruthless but he is also said to be a realistic leader, admired for his ability to make difficult decisions.</p>
+                        <Link href={`/blog`} className='bg-transparent hover:bg-[#e40038] text-[#e40038] hover:text-[#faf3e9]  transition-all duration-700'>
+                            <p>
+                                Voir tous les projets
+                            </p>
+                        </Link>
                     </div>
                 </section>
 
-                <section className='w-full'>
-                    <div className='flex flex-col'>
-                        <div className='contents'>
-                            <div className='w-full h-auto relative flex-none bg-transparent hover:bg-[#e40038] text-[#e40038] hover:text-[#faf3e9] transition-all duration-700 border-b-2 border-[#e40038]'>
-                                <div className='p-4 flex flex-col flex-nowrap h-min justify-start'>
-                                    <div>
-                                        <div>
-                                            <div className={`${PP.className}  md:text-5xl text-3xl`}>
-                                                1500
-                                            </div>
-                                            <div className={`${anton.className} md:text-2xl text-xl`}>
-                                                FJRFRJFRKF
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <PostCard />
 
-                        <div className='contents'>
-                            <div className='w-full h-auto relative flex-none bg-transparent hover:bg-[#e40038] text-[#e40038] hover:text-[#faf3e9] transition-all duration-700 border-b-2 border-[#e40038]'>
-                                <div className='p-4 flex flex-col flex-nowrap h-min justify-start'>
-                                    <div>
-                                        <div>
-                                            <div className={`${PP.className}  md:text-5xl text-3xl`}>
-                                                1500
-                                            </div>
-                                            <div className={`${anton.className} md:text-2xl text-xl`}>
-                                                FJRFRJFRKF
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='contents'>
-                            <div className='w-full h-auto relative flex-none bg-transparent hover:bg-[#e40038] text-[#e40038] hover:text-[#faf3e9] transition-all duration-700 border-b-2 border-[#e40038]'>
-                                <div className='p-4 flex flex-col flex-nowrap h-min justify-start'>
-                                    <div>
-                                        <div>
-                                            <div className={`${PP.className}  md:text-5xl text-3xl`}>
-                                                1500
-                                            </div>
-                                            <div className={`${anton.className} md:text-2xl text-xl`}>
-                                                FJRFRJFRKF
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='contents'>
-                            <div className='w-full h-auto relative flex-none bg-transparent hover:bg-[#e40038] text-[#e40038] hover:text-[#faf3e9] transition-all duration-700 border-b-2 border-[#e40038]'>
-                                <div className='p-4 flex flex-col flex-nowrap h-min justify-start'>
-                                    <div>
-                                        <div>
-                                            <div className={`${PP.className}  md:text-5xl text-3xl`}>
-                                                1500
-                                            </div>
-                                            <div className={`${anton.className} md:text-2xl text-xl`}>
-                                                FJRFRJFRKF
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='contents'>
-                            <div className='w-full h-auto relative flex-none bg-transparent hover:bg-[#e40038] text-[#e40038] hover:text-[#faf3e9] transition-all duration-700 border-[#e40038]'>
-                                <div className='p-4 flex flex-col flex-nowrap h-min justify-start'>
-                                    <div>
-                                        <div>
-                                            <div className={`${PP.className}  md:text-5xl text-3xl`}>
-                                                1500
-                                            </div>
-                                            <div className={`${anton.className} md:text-2xl text-xl`}>
-                                                FJRFRJFRKF
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
             </div>
 
             <div className="self-stretch flex-none h-auto relative w-[8%] lg:block hidden lg:border-b-2 lg:border-[#e40038]" style={{ transform: "rotate(180deg)" }}>
-                <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative" data-framer-name="Variant 1">
+                <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative">
                     <div className="gap-80 flex" style={{ transform: "rotate(270deg)", opacity: 1 }}>
                         <div className='gap-40 flex'>
                             <div className="">

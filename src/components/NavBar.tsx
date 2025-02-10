@@ -20,10 +20,11 @@ function NavBar() {
                 <div className='flex'>
                     <nav>
                         <ul className='flex'>
-                            <li className={`${anton.className}  text-[#e40038] pr-4`}><a href="">ACCUEIL</a></li>
-                            <li className={`${anton.className}  text-[#e40038] pr-4`}><a href="">A PROPOS</a></li>
-                            <li className={`${anton.className}  text-[#e40038] pr-4`}><a href="">PROJETS</a></li>
-                            <li className={`${anton.className}  text-[#e40038] pr-4`}><a href="">CONTACT</a></li>
+                            <li className={`${anton.className}  text-[#e40038] pr-4`}><a href="#">ACCUEIL</a></li>
+                            <li className={`${anton.className}  text-[#e40038] pr-4`}><a href="#propos">A PROPOS</a></li>
+                            <li className={`${anton.className}  text-[#e40038] pr-4`}><a href="#projets">PROJETS</a></li>
+                            <li className={`${anton.className}  text-[#e40038] pr-4`}><a href="#art">ART</a></li>
+                            <li className={`${anton.className}  text-[#e40038] pr-4`}><a href="#contact">CONTACT</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -53,7 +54,7 @@ function NavBar() {
                                 rel="noopener noreferrer"
                             >
                                 <Image
-                                    
+
                                     aria-hidden
                                     src="/instagram.svg"
                                     alt=""
@@ -70,7 +71,7 @@ function NavBar() {
                                 rel="noopener noreferrer"
                             >
                                 <Image
-                                    
+
                                     aria-hidden
                                     src="/linkedin.svg"
                                     alt=""
@@ -87,7 +88,7 @@ function NavBar() {
                                 rel="noopener noreferrer"
                             >
                                 <Image
-                                    
+
                                     aria-hidden
                                     src="/github.svg"
                                     alt=""

@@ -13,19 +13,16 @@ function About() {
                 <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative" data-framer-name="Variant 1">
                     <div className="gap-40 flex" style={{ transform: "rotate(90deg)", opacity: 1 }}>
                         <div className="">
-                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>informations</h6>
                         </div>
                         <div className="">
-                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>02/05</h6>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div className='flex flex-col items-center text-center gap-10 pt-32 pb-36 px-8 lg:w-[84%] w-full border-[#e40038] lg:border-l-2 lg:border-r-2 border-t-2'>
-                <div>
-                    <h2 className={`${PP.className} text-4xl leading-[136%] text-[#e40038]`}>THOMAS ZABALO</h2>
-                </div>
                 <div className='flex flex-col justify-start flex-shrink-0 max-w-[900px] min-w-[300px] relative w-full text-balance'>
                     <h4 className={`${PP.className} md:text-5xl text-3xl leading-[96%] text-[#e40038]`}>Oda Nobunaga is known as the first great unifier of japan - a daimyō who overthrew the ashikaga shogunate and ended years of feudal wars in japan</h4>
                 </div>
@@ -38,10 +35,10 @@ function About() {
                 <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative" data-framer-name="Variant 1">
                     <div className="gap-40 flex" style={{ transform: "rotate(270deg)", opacity: 1 }}>
                         <div className="">
-                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>02/05</h6>
                         </div>
                         <div className="">
-                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>biodata</h6>
+                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>informations</h6>
                         </div>
                     </div>
                 </div>

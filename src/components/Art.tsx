@@ -7,7 +7,7 @@ const anton = Anton({ weight: '400', subsets: ['latin'] })
 function Art() {
     
     return (
-        <section className='flex items-center flex-row justify-center'>
+        <section className='flex items-center flex-row justify-center' id='art'>
 
             <div className="self-stretch flex-none h-auto relative w-[8%] lg:block hidden lg:border-b-2 lg:border-[#e40038]" style={{ transform: "rotate(180deg)" }}>
                 <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative" data-framer-name="Variant 1">
