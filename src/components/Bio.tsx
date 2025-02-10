@@ -1,9 +1,6 @@
 import React from 'react'
 import localFont from 'next/font/local';
-import { Anton } from 'next/font/google'
-import Image from 'next/image';
 const PP = localFont({ src: '../fonts/PPNikkeiMaru-Ultrabold.otf' });
-const anton = Anton({ weight: '400', subsets: ['latin'] })
 
 function Bio() {
 

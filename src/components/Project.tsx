@@ -1,10 +1,8 @@
 import React from 'react'
 import localFont from 'next/font/local';
-import { Anton } from 'next/font/google'
 import PostCard from './PostCard';
 import Link from 'next/link';
 const PP = localFont({ src: '../fonts/PPNikkeiMaru-Ultrabold.otf' });
-const anton = Anton({ weight: '400', subsets: ['latin'] })
 
 function Project() {
     return (

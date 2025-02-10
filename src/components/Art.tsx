@@ -67,9 +67,8 @@ function Art() {
                                 </div>
                                 <div aria-hidden="true">
                                     <Image
-                                        className='rounded-sm'
-                                        src={"/Johnny.jpg"}
-                                        alt='Image de Johnny Haliday'
+                                        src="/Johnny.jpg"
+                                        alt="Image de Johnny &apos;Haliday&apos;" // Escape single quotes with &apos;
                                         width={300}
                                         height={200}
                                     />
@@ -90,8 +89,8 @@ function Art() {
                                 </div>
                                 <div aria-hidden="true">
                                     <Image
-                                        src={"/Tower.jpg"}
-                                        alt="Image d'une tour de télécommunication"
+                                        src="/Tower.jpg"
+                                        alt="Image d&apos;une tour de télécommunication" // Escape single quotes
                                         width={300}
                                         height={200}
                                     />
@@ -112,8 +111,8 @@ function Art() {
                                 </div>
                                 <div aria-hidden="true">
                                     <Image
-                                        src={"/Red_House.jpg"}
-                                        alt="Image d'une maison rouge"
+                                        src="/Red_House.jpg"
+                                        alt="Image d&apos;une maison rouge" // Escape single quotes
                                         width={300}
                                         height={200}
                                     />

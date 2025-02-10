@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
-import { Anton } from 'next/font/google'
 import "./globals.css";
-import SmoothScrollWrapper from "@/components/SmoothScrollWrapper"; // Import du wrapper
-
-const anton = Anton({ weight: '400', subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "AKITOMO",
@@ -17,9 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className="scroll-smooth">
-      <body className={`antialiased overflow-x-hidden`}>
-        {/* <SmoothScrollWrapper /> */}
-       
+      <body className={`antialiased overflow-x-hidden`}>     
         {children}
       </body>
     </html>
