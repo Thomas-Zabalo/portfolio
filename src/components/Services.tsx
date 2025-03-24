@@ -10,7 +10,6 @@ function Services() {
                         <span> Services </span>
                     </a>
                 </h2>
-                <p className="text-text font-semibold text-lg"> €100/hour                </p>
             </div>
 
             <p className="mt-4">
@@ -18,11 +17,26 @@ function Services() {
                 I'm dedicated to crafting seamless, efficient, and user-friendly solutions.
             </p>
 
-
-            <ServicesCard title='Frontend' paragraphe='I care about creating delightful interfaces, crafting pixel-perfect,
+            <div className="mt-4 grid grid-cols-1 gap-4">
+                <ServicesCard title='Frontend' paragraphe='I care about creating delightful interfaces, crafting pixel-perfect,
         responsive designs, paying attention to accessibility, and optimizing
-        performance for an exceptional user experience.'/>
-
+        performance for an exceptional user experience.' category="frontend" />
+                <ServicesCard title='Backend' paragraphe='I care about creating delightful interfaces, crafting pixel-perfect,
+        responsive designs, paying attention to accessibility, and optimizing
+        performance for an exceptional user experience.' category="backendcms" />
+                <ServicesCard title='Mobile' paragraphe='I care about creating delightful interfaces, crafting pixel-perfect,
+        responsive designs, paying attention to accessibility, and optimizing
+        performance for an exceptional user experience.' category="mobile" />
+                <ServicesCard title='UI/UX' paragraphe='I care about creating delightful interfaces, crafting pixel-perfect,
+        responsive designs, paying attention to accessibility, and optimizing
+        performance for an exceptional user experience.' category="uiux" />
+                <ServicesCard title='DevOps' paragraphe='I care about creating delightful interfaces, crafting pixel-perfect,
+        responsive designs, paying attention to accessibility, and optimizing
+        performance for an exceptional user experience.' category="devops" />
+                <ServicesCard title='3D & Game Dev' paragraphe='I care about creating delightful interfaces, crafting pixel-perfect,
+        responsive designs, paying attention to accessibility, and optimizing
+        performance for an exceptional user experience.' category="3d" />
+            </div>
 
         </section>
     )
