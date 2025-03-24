@@ -1,3 +1,5 @@
+import { url } from "inspector";
+
 export const TECH_CATEGORIES = {
     frontend: [
         {
@@ -58,15 +60,15 @@ export const TECH_CATEGORIES = {
             svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typo3/typo3-original.svg",
         },
     ],
-    mobile:[
+    mobile: [
         {
-            name: React Native,
+            name: "React Native",
             url: "https://reactnative.dev/",
             svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         },
         {
-            name: Kotlin,
-            url:"https://kotlinlang.org/",
+            name: "Kotlin",
+            url: "https://kotlinlang.org/",
             svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"
         }
     ],
@@ -99,34 +101,58 @@ export const TECH_CATEGORIES = {
             svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
         },
     ],
-    3d: [
+    model: [
         {
             name: "Blender",
             url: "https://www.blender.org/",
-            svg "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+            svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg",
         },
         {
-            name:"Unity",
-            url:"https://unity.com/fr",
-            svg:"https://github.com/devicons/devicon/blob/master/icons/unity/unity-original.svg",
+            name: "Unity",
+            url: "https://unity.com/fr",
+            svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg",
         }
     ]
 };
 
 export const PROJECTS = [
-  {
-    name: "Escape Lab",
-    description: "Un jeu d'évasion en 1ère personne dans un laboratoire secret.",
-    github: "https://github.com/user/escape-lab",
-    date: "2025-03-24",
-    image: "/images/escape-lab.png",
-  },
-  {
-    name: "Akitomo",
-    description: "Portfolio inspiré du Japon traditionnel et des CRT.",
-    github: "https://github.com/user/akitomo",
-    date: "2025-02-10",
-    image: "/images/akitomo.png",
-  },
+    {
+        name: "Escape Lab",
+        description: "Un jeu d'évasion en 1ère personne dans un laboratoire secret.",
+        github: "https://github.com/user/escape-lab",
+        date: "2025-03-24",
+        image: "/images/escape-lab.png",
+    },
+    {
+        name: "Akitomo",
+        description: "Portfolio inspiré du Japon traditionnel et des CRT.",
+        github: "https://github.com/user/akitomo",
+        date: "2025-02-10",
+        image: "/images/akitomo.png",
+    },
+];
+
+export const PARCOURS = [
+    {
+        name: "Lycée technologique Antoine Bourdelle",
+        localisation: "Montauban",
+        date: "2019-07-01 - 2022-07-01",
+        url: "https://www.lycee-bourdelle.fr/",
+        image: "https://lh3.googleusercontent.com/p/AF1QipNAC9p1m_XBwkZ7WI2y8tX1esbl63G1MWS0vXd5=s680-w680-h510",
+    },
+    {
+        name: "IUT PAUL SABATIER",
+        localisation: "Castres",
+        date: "2022-09-01 - now",
+        url: "https://www.iut-tlse3.fr/",
+        image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ladepeche.fr%2F2020%2F12%2F01%2Fliut-de-castres-projette-ses-travaux-et-espere-ouvrir-un-nouveau-departement-9231791.php&psig=AOvVaw3WkluJ1Swt84TR4x-UMcex&ust=1742923270303000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNCJ86Odo4wDFQAAAAAdAAAAABAI",
+    },
+    {
+        name: "YNOV Campus",
+        localisation: "Toulouse",
+        date: "2025-09-01",
+        url: "https://www.ynov.com/",
+        image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.jobirl.com%2Fecoles%2Ftoulouse-ynov-campus-8507&psig=AOvVaw0UcW5xpdK90wz8CUFClzKS&ust=1742923288598000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIiup62do4wDFQAAAAAdAAAAABAE",
+    }
 ];
 
