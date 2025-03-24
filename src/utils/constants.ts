@@ -77,11 +77,6 @@ export const TECH_CATEGORIES = {
             svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
         },
         {
-            name: "Adobe XD",
-            url: "https://www.adobe.com/products/xd.html",
-            svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg",
-        },
-        {
             name: "Tailwind",
             url: "https://tailwindcss.com/",
             svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
