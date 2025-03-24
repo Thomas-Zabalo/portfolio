@@ -1,103 +1,14 @@
 'use client'
 import React from 'react'
-import localFont from 'next/font/local';
-const PP = localFont({ src: '../fonts/PPNikkeiMaru-Ultrabold.otf' });
 
 function Contact() {
     return (
-        <section className='flex items-center flex-row justify-center' id='contact'>
-
-            <div className="self-stretch flex-none h-auto relative w-[8%] lg:block hidden lg:border-b-2 lg:border-[#e40038]" style={{ transform: "rotate(180deg)" }}>
-                <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative" data-framer-name="Variant 1">
-                    <div className="gap-40 flex" style={{ transform: "rotate(90deg)", opacity: 1 }}>
-                        <div className="">
-                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Contact</h6>
-                        </div>
-                        <div className="">
-                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>05/05</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className='flex flex-col items-center text-start gap-10 pt-32 pb-36 px-8 lg:w-[84%] w-full border-[#e40038] lg:border-l-2 lg:border-r-2 border-t-2'>
-                <div className="lg:w-1/2 w-full ">
-                    <div className="mx-auto max-w-2xl text-center">
-                        <div>
-                            <h4 className={`${PP.className} md:text-6xl text-3xl leading-[136%] text-[#e40038]`}>CONTACT</h4>
-                        </div>
-                    </div>
-                    <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20 text-[#e40038]">
-                        <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                            <div className="sm:col-span-2">
-                                <label htmlFor="first-name" className="block text-sm/6 font-semibold ">
-                                    Nom
-                                </label>
-                                <div className="mt-2.5">
-                                    <input
-                                        id="first-name"
-                                        name="first-name"
-                                        type="text"
-                                        autoComplete="given-name"
-                                        className="block w-full rounded-md bg-white px-3.5 py-2 text-base  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#e40038]"
-                                    />
-                                </div>
-                            </div>
-                            <div className="sm:col-span-2">
-                                <label htmlFor="email" className="block text-sm/6 font-semibold ">
-                                    Email
-                                </label>
-                                <div className="mt-2.5">
-                                    <input
-                                        id="email"
-                                        name="email"
-                                        type="email"
-                                        autoComplete="email"
-                                        className="block w-full rounded-md bg-white px-3.5 py-2 text-base  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#e40038]"
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="sm:col-span-2">
-                                <label htmlFor="message" className="block text-sm/6 font-semibold ">
-                                    Message
-                                </label>
-                                <div className="mt-2.5">
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        rows={4}
-                                        className="block w-full rounded-md bg-white px-3.5 py-2 text-base  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#e40038]"
-                                        defaultValue={''}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="mt-10">
-                            <button
-                                type="submit"
-                                className="block w-full rounded-md bg-[#e40038] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-[#e40039e0] focus-visible:outline-2"
-                            >
-                                Envoyer
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div className="self-stretch flex-none h-auto relative w-[8%] lg:block hidden lg:border-b-2 lg:border-[#e40038]" style={{ transform: "rotate(180deg)" }}>
-                <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative" data-framer-name="Variant 1">
-                    <div className="gap-40 flex" style={{ transform: "rotate(270deg)", opacity: 1 }}>
-                        <div className="">
-                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>05/05</h6>
-                        </div>
-                        <div className="">
-                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Contact</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        <section id="contact" className="mx-auto px-4 max-w-xl py-16 pb-0">  <div className="flex items-center justify-between"> <h2 className="text-text font-semibold text-lg"> <a href="/#contact" className="group flex items-center space-x-2"> <span> Contact </span> <span className="group-hover:opacity-100 opacity-0 transition-opacity"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5 h-5"> <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 15l6-6m-4-3l.463-.536a5 5 0 0 1 7.071 7.072L18 13m-5 5l-.397.534a5.068 5.068 0 0 1-7.127 0a4.972 4.972 0 0 1 0-7.071L6 11"></path> </svg> </span></a> </h2> <a href="/#services" className="bg-bg-subtle py-1.5 px-3 inline-flex items-center hover:bg-border transition-colors border border-border select-none">  <span className="relative flex h-3 w-3 mr-2">  <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span> </span> <span>Full</span>  </a> </div> <p className="mt-4">
+            Feel free to reach out if you're looking for a developer, have a question or
+            just want to connect. I may be able to take new missions depending on my
+            availability (top-right indicator).
+        </p>
+            <a href="mailto:" className="mt-4 block underline transition-colors hover:text-text">thomas.zabalo@gmail.com</a>
         </section>
     )
 }
