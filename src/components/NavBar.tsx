@@ -4,28 +4,18 @@ import Link from 'next/link';
 
 function NavBar() {
     return (
-        <header id="header" className='fixed top-0 w-full z-50 py-8 px-8 bg-[#faf3e9] border-b-2 border-[#e40038]'>
-            <div id='akitomo-navbar' className='flex items-center justify-between w-full'>
-                {/* Logo à gauche */}
-                <div id='BrandName' className='flex justify-start md:w-[10%]'>
-                    <h1 className={`text-[#e40038]`}>
-                        <Link href="/">AKITOMO</Link>
-                    </h1>
-                </div>
+        <header class="px-4 mx-auto max-w-xl flex items-center justify-between w-full py-2">
+            <a href="/" class="text-text hover:text-text-subtle transition-colors">
 
-                {/* Menu au centre */}
-                <div className="flex-1 flex justify-center md:w-[80%]">
-                    <nav>
-                        <ul className='md:flex hidden space-x-4'>
-                            <li className={` text-[#e40038]`}>
-                                <Link href="/">Projets</Link>
-                            </li>
-                            <li className={` text-[#e40038]`}>
-                                <Link href="/#contact">Contact</Link>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                <span class="sr-only">Home</span>
+            </a>
+            <div class="items-center flex space-x-2">
+                <a href="/blog" class="bg-bg-subtle py-1.5 px-3 inline-flex items-center hover:bg-border transition-colors border border-border select-none">
+                    Projets
+                </a>
+                <a href="/#contact" class="bg-bg-subtle py-1.5 px-3 inline-flex items-center hover:bg-border transition-colors border border-border select-none">
+                    <span>Contact</span>
+                </a>
             </div>
         </header>
     )
