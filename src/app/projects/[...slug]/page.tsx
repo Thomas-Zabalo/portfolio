@@ -31,11 +31,10 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     });
 
     return (
-      <div className='pt-20 prose md:px-40 px-5'>
-        <Link href={`/projects`} className='transition-all duration-700'>
-          <button className="text-[#e40038] rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
-            Retour
-          </button>
+      <div className='mx-auto px-4 max-w-3xl py-16'>
+
+        <Link href={`/projects`} className="bg-gray-100 dark:bg-[#27272a] hover:bg-gray-200 dark:hover:bg-[#343435] py-1.5 px-3 border border-gray-300 dark:border-zinc-700">
+          Retour
         </Link>
         {mdxContent}
       </div>

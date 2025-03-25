@@ -52,7 +52,7 @@ export const TECH_CATEGORIES = {
         {
             name: "WordPress",
             url: "https://wordpress.com/fr/",
-            svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
+            svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
         },
         {
             name: "TYPO3",
@@ -70,6 +70,16 @@ export const TECH_CATEGORIES = {
             name: "Kotlin",
             url: "https://kotlinlang.org/",
             svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"
+        },
+        {
+            name: "Ionic",
+            url: "https://ionicframework.com/",
+            svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg"
+        },
+        {
+            name: "Capacitor",
+            url: "https://capacitorjs.com/",
+            svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/capacitor/capacitor-original.svg"
         }
     ],
     uiux: [
@@ -123,6 +133,7 @@ export const TECH_CATEGORIES = {
 export const PROJECTS = {
     astrotemplate: [
         {
+            category: 'astrotemplate',
             name: "Astro",
             url: "https://astro.build",
             svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/astro/astro-original.svg",

@@ -13,9 +13,9 @@ export default function Home() {
       <NavBar />
       <Bio />
       <About />
+      <Project />
       <Parcours />
       <Services />
-      <Project />
       <Contact />
       <Footer/>
     </div >

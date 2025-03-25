@@ -1,5 +1,6 @@
 import React from 'react';
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from 'next/link';
 
 interface ParcoursCard {
     name: string;
@@ -12,29 +13,30 @@ interface ParcoursCard {
 }
 
 const ParcoursCard: React.FC<ParcoursCard> = ({ name, description, localisation, url, date, image, niveau }) => {
-
     return (
-        <div className="relative bg-bg border border-border aspect-video">
+        <div className="relative bg-white  border border-gray-300 dark:border-zinc-700 aspect-video">
             <Image
                 src={image}
                 alt={`Image réprésentant ${name}`}
-                width="576" height="302" loading="lazy" decoding="async" className="object-cover object-center" />
-            <div className="absolute top-0 bg-bg-subtle px-2 py-1 text-sm flex items-center justify-between border-r border-b border-border bg-white">
+                width="576" height="302" loading="lazy" decoding="async" 
+                className="object-cover object-center" 
+            />
+            <div className="absolute top-0 bg-gray-100 dark:bg-[#27272a] px-2 py-1 text-sm flex items-center justify-between border-r border-b border-gray-300 dark:border-gray-700">
                 {date}
             </div>
-            <div className="bg-bg-subtle p-2 border-t border-border">
+            <div className="bg-gray-100 dark:bg-[#27272a] p-2 border-t border-gray-300 dark:border-zinc-700">
                 <div className="flex items-center justify-between">
-                    <div className="text-text font-semibold">{name}</div>
+                    <div className="text-gray-900 dark:text-gray-100 font-semibold">{name}</div>
                     <div className="flex items-center justify-center space-x-2 text-sm">
-                        <a href={url} target="_blank" className="underline hover:text-text transition-colors"> {localisation} </a>
+                        <Link href={url} target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-700 dark:hover:dark:text-gray-400 transition-colors">{localisation}</Link>
                     </div>
                 </div>
-                <div className="mt-3">
+                <div className="mt-3 text-gray-700 dark:text-gray-400">
                     <p>{description}</p>
                 </div>
                 {niveau && (
                     <div className="flex flex-wrap mt-2">
-                        <div className='bg-bg border align-middle border-border px-1.5 py-0.5 select-none inline-flex items-center tech-pill hover:text-text transition-colors underline-offset-2'>
+                        <div className='bg-white dark:bg-[#18181b] border border-gray-300 dark:border-zinc-700 px-1.5 py-0.5 select-none inline-flex items-center'>
                             <span className="leading-5">{niveau}</span>
                         </div>
                     </div>
