@@ -100,6 +100,11 @@ export const TECH_CATEGORIES = {
             url: "https://github.com/",
             svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
         },
+        {
+            name: "Gitlab",
+            url: "https://about.gitlab.com",
+            svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg",
+        },
     ],
     model: [
         {
@@ -115,22 +120,66 @@ export const TECH_CATEGORIES = {
     ]
 };
 
-export const PROJECTS = [
-    {
-        name: "Escape Lab",
-        description: "Un jeu d'évasion en 1ère personne dans un laboratoire secret.",
-        github: "https://github.com/user/escape-lab",
-        date: "2025-03-24",
-        image: "/images/escape-lab.png",
-    },
-    {
-        name: "Akitomo",
-        description: "Portfolio inspiré du Japon traditionnel et des CRT.",
-        github: "https://github.com/user/akitomo",
-        date: "2025-02-10",
-        image: "/images/akitomo.png",
-    },
-];
+export const PROJECTS = {
+    astrotemplate: [
+        {
+            name: "Astro",
+            url: "https://astro.build",
+            svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/astro/astro-original.svg",
+        },
+        {
+            name: "Tailwind",
+            url: "https://tailwindcss.com/",
+            svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+        },
+    ],
+    escapegame: [
+        {
+            name: "Unity",
+            url: "https://unity.com/fr",
+            svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg",
+        },
+        {
+            name: "C#",
+            url: "https://docs.microsoft.com/fr-fr/dotnet/csharp/",
+            svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+        }
+    ],
+    wordpresstemplate: [
+        {
+            name: "WordPress",
+            url: "https://wordpress.com/fr/",
+            svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
+        },
+        {
+            name: "PHP",
+            url: "https://www.php.net/",
+            svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+        }
+    ],
+    model: [
+        {
+            name: "Blender",
+            url: "https://www.blender.org/",
+            svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg",
+        },
+    ],
+    todonatif: [
+        {
+            name: "React Native",
+            url: "https://reactnative.dev/",
+            svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+        {
+            name: "Axios",
+            url: "https://axios-http.com/",
+            svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/axios/axios-plain.svg",
+        },
+
+    ],
+}
+
+
 
 export const PARCOURS = [
     {
