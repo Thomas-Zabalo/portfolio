@@ -5,6 +5,7 @@ import Project from "@/components/Project";
 import Bio from "@/components/Bio";
 import NavBar from "@/components/NavBar";
 import Parcours from "@/components/Parcours";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <Project />
       <Contact />
+      <Footer/>
     </div >
   );
 }

@@ -3,7 +3,7 @@ import React from 'react'
 
 function Contact() {
     return (
-        <section id="contact" className="mx-auto px-4 max-w-xl py-16 pb-0">
+        <section id="contact" className="mx-auto px-4 max-w-xl py-16 pb-12">
             <div className="flex items-center justify-between">
                 <h2 className="text-text font-semibold text-lg">
                     <a href="/#contact" className="group flex items-center space-x-2">

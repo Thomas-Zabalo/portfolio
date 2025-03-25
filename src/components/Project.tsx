@@ -21,8 +21,12 @@ function Project() {
                 I'm dedicated to crafting seamless, efficient, and user-friendly solutions.
             </p>
 
-            <div className="grid grid-cols-1 mt-4 gap-10">
-                <ProjectCard />
+            <div className="mt-4 grid grid-cols-1 gap-4">
+                <ProjectCard name="Lycée technologique Antoine Bourdelle" description="Le lycée Antoine-Bourdelle est un établissement d’enseignement secondaire et supérieur, situé 3 boulevard Édouard-Herriot à Montauban. C'est le plus grand lycée de l'Académie de Toulouse avec 3 000 élèves" date="2019-07-01 - 2022-07-01" url="https://www.lycee-bourdelle.fr/" image="/Lycee_Antoine_Bourdelle.webp" category='astrotemplate' />
+                <ProjectCard name="Lycée technologique Antoine Bourdelle" description="Le lycée Antoine-Bourdelle est un établissement d’enseignement secondaire et supérieur, situé 3 boulevard Édouard-Herriot à Montauban. C'est le plus grand lycée de l'Académie de Toulouse avec 3 000 élèves" date="2019-07-01 - 2022-07-01" url="https://www.lycee-bourdelle.fr/" image="/Lycee_Antoine_Bourdelle.webp" category='escapegame' />
+                <ProjectCard name="Lycée technologique Antoine Bourdelle" description="Le lycée Antoine-Bourdelle est un établissement d’enseignement secondaire et supérieur, situé 3 boulevard Édouard-Herriot à Montauban. C'est le plus grand lycée de l'Académie de Toulouse avec 3 000 élèves" date="2019-07-01 - 2022-07-01" url="https://www.lycee-bourdelle.fr/" image="/Lycee_Antoine_Bourdelle.webp" category='wordpresstemplate' />
+                <ProjectCard name="Lycée technologique Antoine Bourdelle" description="Le lycée Antoine-Bourdelle est un établissement d’enseignement secondaire et supérieur, situé 3 boulevard Édouard-Herriot à Montauban. C'est le plus grand lycée de l'Académie de Toulouse avec 3 000 élèves" date="2019-07-01 - 2022-07-01" url="https://www.lycee-bourdelle.fr/" image="/Lycee_Antoine_Bourdelle.webp" category='model'/>
+                <ProjectCard name="Lycée technologique Antoine Bourdelle" description="Le lycée Antoine-Bourdelle est un établissement d’enseignement secondaire et supérieur, situé 3 boulevard Édouard-Herriot à Montauban. C'est le plus grand lycée de l'Académie de Toulouse avec 3 000 élèves" date="2019-07-01 - 2022-07-01" url="https://www.lycee-bourdelle.fr/" image="/Lycee_Antoine_Bourdelle.webp" category='todonatif'/>
             </div>
         </section>
     )
