@@ -18,11 +18,6 @@ function Parcours() {
                 </h2>
             </div>
 
-            <p className="mt-4">
-                I'm a frontend specialist with good knowledge in backend, UI/UX, and DevOps.
-                I'm dedicated to crafting seamless, efficient, and user-friendly solutions.
-            </p>
-
             <div className="mt-4 grid grid-cols-1 gap-4">
                 <ParcoursCard name="Lycée technologique Antoine Bourdelle" description="Le lycée Antoine-Bourdelle est un établissement d’enseignement secondaire et supérieur, situé 3 boulevard Édouard-Herriot à Montauban. C'est le plus grand lycée de l'Académie de Toulouse avec 3 000 élèves" localisation="Montauban" date="2019-07-01 - 2022-07-01" url="https://www.lycee-bourdelle.fr/" image="/Lycee_Antoine_Bourdelle.webp" niveau="Bac"/>
                 <ParcoursCard name="IUT Paul Sabatier" description="L'IUT Paul Sabatier - Site de Castres est une antenne de l'Université Toulouse III - Paul Sabatier, située à Castres, dans le Tarn. Il propose des formations professionnalisantes en lien avec les besoins du tissu économique local et national." localisation="Castres" date="2022-09-01 - now" url="https://www.iut-tlse3.fr/" image="/IUT_Paul_Sabatier_Castres.webp"  niveau="Bac+3"/>

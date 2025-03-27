@@ -1,6 +1,7 @@
 import React from "react";
-import { TECH_CATEGORIES } from "@/utils/constants";
+import { TECH_CATEGORIES } from "@/data/constants";
 import Link from "next/link";
+import Image from 'next/image';
 
 interface ServicesCardProps {
     title: string;
@@ -24,7 +25,7 @@ const ServicesCard: React.FC<ServicesCardProps> = ({ title, paragraphe, category
                         target="_blank"
                         className="bg-white border border-gray-300 px-2 py-1 inline-flex items-center hover:underline hover:text-gray-900 transition-colors dark:bg-[#18181b] dark:hover:text-white dark:border-gray-700"
                     >
-                        <img src={tech.svg} alt={tech.name} className="mr-1 h-4 w-4" />
+                        <Image src={tech.svg} alt={`Logo de la technologie: ${tech.name}`} width="16" height="16" className="mr-1 h-4 w-4" />
                         <span className="leading-5">{tech.name}</span>
                     </Link>
                 ))}

@@ -1,5 +1,6 @@
 'use client'
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 
 function Contact() {
     return (
@@ -16,11 +17,9 @@ function Contact() {
                 </h2>
             </div>
             <p className="mt-4">
-                Feel free to reach out if you're looking for a developer, have a question or
-                just want to connect. I may be able to take new missions depending on my
-                availability (top-right indicator).
+                N'hésitez pas à me contacter si vous cherchez un développeur, si vous avez des questions ou si vous souhaitez simplement échanger.
             </p>
-            <a href="mailto:" className="mt-4 block underline transition-colors hover:text-text">thomas.zabalo@gmail.com</a>
+            <Link href="mailto:thomas.zabalo@gmail.com" className="mt-4 block underline transition-colors hover:text-text">thomas.zabalo@gmail.com</Link>
         </section>
     )
 }

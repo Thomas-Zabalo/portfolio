@@ -31,7 +31,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     });
 
     return (
-      <div className='mx-auto px-4 max-w-3xl py-16'>
+      <div className='prose'>
 
         <Link href={`/projects`} className="bg-gray-100 dark:bg-[#27272a] hover:bg-gray-200 dark:hover:bg-[#343435] py-1.5 px-3 border border-gray-300 dark:border-zinc-700">
           Retour

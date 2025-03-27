@@ -37,7 +37,7 @@ export default async function BlogPage() {
   const posts = await getPosts(); // Appel côté serveur
 
   return (
-    <section id="parcours" className="mx-auto px-4 max-w-xl py-16">
+    <section id="parcours">
       <div className="flex justify-between items-center">
         <h2 className="text-text font-semibold text-lg">
           <Link href="/#parcours" className="group flex items-center space-x-2">

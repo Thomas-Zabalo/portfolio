@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { PROJECTS } from '@/utils/constants';
+import { PROJECTS } from '@/data/constants';
 import Link from 'next/link';
 
 interface ProjectCardProps {

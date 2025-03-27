@@ -11,11 +11,23 @@ function Bio() {
                         <h1 className="text-2xl font-semibold text-text">Thomas Zabalo</h1>
                     </div>
                     <div className="mt-2 space-y-3 sm:space-y-2 dark:text-zinc-400 text-gray-700">
-                        <p>Développeur Full-Stack.</p>
                         <p>
+                            Je suis un développeur Frontend passionné, avec des connaissances en backend et en UI/UX.
+                            J’aime concevoir des interfaces intuitives et soignées, en alliant performance et expérience utilisateur.
                         </p>
                     </div>
                 </div>
+            </div>
+            <div className="mt-4 space-y-3 sm:space-y-2 dark:text-zinc-400 text-gray-700">
+                <p>
+                    Actuellement en troisième année en <span className="bg-white border border-gray-300 px-2 py-1 inline-flex items-center   transition-colors dark:bg-[#18181b]  dark:border-gray-700"
+                    >BUT MMI
+                    </span> et futur étudiant en <span className="bg-white border border-gray-300 px-2 py-1 inline-flex items-center   transition-colors dark:bg-[#18181b]  dark:border-gray-700"
+                    >MASTER
+                    </span> à <span className="bg-white border border-gray-300 px-2 py-1 inline-flex items-center   transition-colors dark:bg-[#18181b]  dark:border-gray-700"
+                    >Ynov Campus
+                    </span>
+                </p>
             </div>
         </section>
     )

@@ -19,29 +19,40 @@ function Services() {
             </div>
 
             <p className="mt-4 text-gray-700 dark:text-gray-400">
-                I'm a frontend specialist with good knowledge in backend, UI/UX, and DevOps.
-                I'm dedicated to crafting seamless, efficient, and user-friendly solutions.
+                Au fil des projets réalisés durant ma formation et de mes expériences professionnelles, j’ai eu l’opportunité de travailler avec de nombreuses technologies :
             </p>
 
             <div className="mt-4 grid grid-cols-1 gap-4">
-                <ServicesCard title='Frontend' paragraphe='I care about creating delightful interfaces, crafting pixel-perfect,
-        responsive designs, paying attention to accessibility, and optimizing
-        performance for an exceptional user experience.' category="frontend" />
-                <ServicesCard title='Backend' paragraphe='I care about creating delightful interfaces, crafting pixel-perfect,
-        responsive designs, paying attention to accessibility, and optimizing
-        performance for an exceptional user experience.' category="backendcms" />
-                <ServicesCard title='Mobile' paragraphe='I care about creating delightful interfaces, crafting pixel-perfect,
-        responsive designs, paying attention to accessibility, and optimizing
-        performance for an exceptional user experience.' category="mobile" />
-                <ServicesCard title='UI/UX' paragraphe='I care about creating delightful interfaces, crafting pixel-perfect,
-        responsive designs, paying attention to accessibility, and optimizing
-        performance for an exceptional user experience.' category="uiux" />
-                <ServicesCard title='DevOps' paragraphe='I care about creating delightful interfaces, crafting pixel-perfect,
-        responsive designs, paying attention to accessibility, and optimizing
-        performance for an exceptional user experience.' category="devops" />
-                <ServicesCard title='3D & Game Dev' paragraphe='I care about creating delightful interfaces, crafting pixel-perfect,
-        responsive designs, paying attention to accessibility, and optimizing
-        performance for an exceptional user experience.' category="model" />
+                <ServicesCard
+                    title='Frontend'
+                    paragraphe='Je me passionne pour la création d’interfaces utilisateur attrayantes, en concevant des designs responsives et pixel-perfect, tout en portant une attention particulière à l’accessibilité et à l’optimisation des performances pour offrir une expérience utilisateur exceptionnelle.'
+                    category="frontend" />
+
+                <ServicesCard
+                    title='Backend & CMS'
+                    paragraphe='Je me concentre sur la conception de solutions backend robustes et évolutives, en assurant une intégration fluide avec les systèmes existants, tout en garantissant des performances optimales et une gestion efficace des données.'
+                    category="backendcms" />
+
+                <ServicesCard
+                    title='Mobile'
+                    paragraphe='Je m’efforce de créer des expériences mobiles fluides et engageantes, en développant des interfaces utilisateur intuitives et en optimisant les performances pour des appareils mobiles afin de garantir une expérience optimale sur toutes les plateformes.'
+                    category="mobile" />
+
+                <ServicesCard
+                    title='UI/UX'
+                    paragraphe='Je m’engage à créer des interfaces utilisateur élégantes et fonctionnelles, en mettant l’accent sur l’ergonomie, l’accessibilité et la fluidité de l’expérience utilisateur pour répondre aux besoins des utilisateurs tout en offrant une expérience agréable.'
+                    category="uiux" />
+
+                <ServicesCard
+                    title='DevOps'
+                    paragraphe='Je mets en place des solutions DevOps pour automatiser les processus de développement et de déploiement, améliorer l’efficacité de l’équipe, et garantir une intégration continue et une gestion efficace des infrastructures.'
+                    category="devops" />
+
+                <ServicesCard
+                    title='3D & Game Dev'
+                    paragraphe='Je crée des environnements 3D immersifs et des expériences de jeu captivantes, en travaillant sur des modèles 3D et des mécaniques de gameplay pour offrir une expérience interactive riche et divertissante.'
+                    category="model" />
+
             </div>
         </section>
     );

@@ -18,8 +18,8 @@ function Project() {
             </div>
 
             <p className="my-4 dark:text-zinc-400 text-gray-700">
-                I'm a frontend specialist with good knowledge in backend, UI/UX, and DevOps.
-                I'm dedicated to crafting seamless, efficient, and user-friendly solutions.
+                Durant mes trois années de formation, j’ai eu l’opportunité de réaliser divers projets sur des thématiques variées,
+                me permettant d’explorer différentes approches et technologies.
             </p>
             <div>
                 <Link href="/projects" className="bg-gray-100 dark:bg-[#27272a] py-1.5 px-3 inline-flex items-center hover:bg-gray-200 dark:hover:bg-[#343435] transition-colors border border-gray-300 dark:border-zinc-700 select-none">
