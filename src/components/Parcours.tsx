@@ -19,9 +19,79 @@ function Parcours() {
             </div>
 
             <div className="mt-4 grid grid-cols-1 gap-4">
-                <ParcoursCard name="Lycée technologique Antoine Bourdelle" description="Le lycée Antoine-Bourdelle est un établissement d’enseignement secondaire et supérieur, situé 3 boulevard Édouard-Herriot à Montauban. C'est le plus grand lycée de l'Académie de Toulouse avec 3 000 élèves" localisation="Montauban" date="2019-07-01 - 2022-07-01" url="https://www.lycee-bourdelle.fr/" image="/Lycee_Antoine_Bourdelle.webp" niveau="Bac"/>
-                <ParcoursCard name="IUT Paul Sabatier" description="L'IUT Paul Sabatier - Site de Castres est une antenne de l'Université Toulouse III - Paul Sabatier, située à Castres, dans le Tarn. Il propose des formations professionnalisantes en lien avec les besoins du tissu économique local et national." localisation="Castres" date="2022-09-01 - now" url="https://www.iut-tlse3.fr/" image="/IUT_Paul_Sabatier_Castres.webp"  niveau="Bac+3"/>
-                <ParcoursCard name="YNOV Campus" description="Ynov Campus Toulouse est une école privée spécialisée dans les formations aux métiers du numérique et des nouvelles technologies. Située à Toulouse, elle fait partie du réseau Ynov Campus, présent dans plusieurs villes en France." localisation="Toulouse" date="2025-09-01 - 2027-07-01" url="https://www.ynov.com/" image="/Campus_Ynov_Toulouse.webp"  niveau="Formation futur"/>
+                <ul className="timeline timeline-vertical">
+                    <li>
+                        <div className="timeline-start timeline-box">
+                            <span className='text-gray-900 dark:text-gray-100 font-semibold'>
+                                Lycée Antoine Bourdelle - Montauban
+                            </span>
+                            <br />
+                            <span className='flex justify-end text-gray-700 dark:text-gray-400'>
+                                2019-07-01 - 2022-07-01
+                            </span>
+                        </div>
+                        <div className="timeline-middle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                className="text-primary h-5 w-5">
+                                <path
+                                    fillRule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clipRule="evenodd" />
+                            </svg>
+                        </div>
+                        <hr className="bg-primary" />
+                    </li>
+                    <li>
+                        <hr className="bg-primary" />
+                        <div className="timeline-middle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                className="text-primary h-5 w-5">
+                                <path
+                                    fillRule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clipRule="evenodd" />
+                            </svg>
+                        </div>
+                        <div className="timeline-end timeline-box">
+                            <span className='text-gray-900 dark:text-gray-100 font-semibold'>
+                                IUT Paul Sabatier - Castres
+                            </span>
+                            <br />
+                            <span className='flex justify-end text-gray-700 dark:text-gray-400'>
+                                2022-09-01 - now
+                            </span></div>
+                        <hr className="bg-primary" />
+                    </li>
+                    <li>
+                        <hr className="bg-gray-300 dark:bg-zinc-700" />
+                        <div className="timeline-start timeline-box">
+                            <span className='text-gray-900 dark:text-gray-100 font-semibold'>
+                                YNOV Campus - Toulouse
+                            </span>
+                            <br />
+                            <span className='flex justify-end text-gray-700 dark:text-gray-400'>
+                                2025-09-01 - 2027-07-01
+                            </span></div>
+                        <div className="timeline-middle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                className="text-gray-300 dark:text-zinc-700 h-5 w-5">
+                                <path
+                                    fillRule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clipRule="evenodd" />
+                            </svg>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     )

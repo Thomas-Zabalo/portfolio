@@ -20,11 +20,11 @@ function Bio() {
             </div>
             <div className="mt-4 space-y-3 sm:space-y-2 dark:text-zinc-400 text-gray-700">
                 <p>
-                    Actuellement en troisième année en <span className="bg-white border border-gray-300 px-2 py-1 inline-flex items-center   transition-colors dark:bg-[#18181b]  dark:border-gray-700"
+                    Actuellement en troisième année en <span className="bg-gray-100  border border-gray-300 px-2 py-1 inline-flex items-center   transition-colors dark:bg-[#27272a]  dark:border-gray-700"
                     >BUT MMI
-                    </span> et futur étudiant en <span className="bg-white border border-gray-300 px-2 py-1 inline-flex items-center   transition-colors dark:bg-[#18181b]  dark:border-gray-700"
+                    </span> et futur étudiant en <span className="bg-gray-100 border border-gray-300 px-2 py-1 inline-flex items-center   transition-colors dark:bg-[#27272a]  dark:border-gray-700"
                     >MASTER
-                    </span> à <span className="bg-white border border-gray-300 px-2 py-1 inline-flex items-center   transition-colors dark:bg-[#18181b]  dark:border-gray-700"
+                    </span> à <span className="bg-gray-100 border border-gray-300 px-2 py-1 inline-flex items-center   transition-colors dark:bg-[#27272a]  dark:border-gray-700"
                     >Ynov Campus
                     </span>
                 </p>

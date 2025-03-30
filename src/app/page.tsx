@@ -6,6 +6,7 @@ import Bio from "@/components/Bio";
 import NavBar from "@/components/NavBar";
 import Parcours from "@/components/Parcours";
 import Footer from "@/components/Footer";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -13,11 +14,12 @@ export default function Home() {
       <NavBar />
       <Bio />
       <About />
-      <Project />
       <Parcours />
       <Services />
+      <Project />
+      <Experience />
       <Contact />
-      <Footer/>
+      <Footer />
     </div >
   );
 }
