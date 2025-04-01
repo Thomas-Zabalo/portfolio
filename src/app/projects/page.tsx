@@ -9,6 +9,7 @@ interface Post {
   title: string;
   description: string;
   date: string;
+  image: string;
 }
 
 async function getPosts(): Promise<Post[]> {
@@ -26,6 +27,7 @@ async function getPosts(): Promise<Post[]> {
         title: data.title,
         description: data.description,
         date: data.date,
+        image: data.image
       };
     })
   );
@@ -49,6 +51,13 @@ export default async function BlogPage() {
             </span>
           </Link>
         </h2>
+        <div>
+          <p>
+            <Link href="https://github.com/Thomas-Zabalo" className="group flex items-center space-x-2">
+              <span className='hover:underline'> Github </span>
+            </Link>
+          </p>
+        </div>
       </div>
 
       <p className="mt-4">
@@ -63,7 +72,7 @@ export default async function BlogPage() {
             description={post.description}
             date={post.date}
             url={`/blog/${post.slug}`}
-            image="/default-blog-image.jpg"
+            image={post.image}
             slug={post.slug}
           />
         ))}

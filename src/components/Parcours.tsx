@@ -1,5 +1,4 @@
 import React from 'react'
-import ParcoursCard from './ParcoursCard'
 import Link from 'next/link'
 
 
@@ -66,7 +65,7 @@ function Parcours() {
                             <span className='flex justify-end text-gray-700 dark:text-gray-400'>
                                 2022-09-01 - now
                             </span></div>
-                        <hr className="bg-primary" />
+                        <hr className="bg-gradient-to-b from-[#605dff] to-[#3f3f46]" />
                     </li>
                     <li>
                         <hr className="bg-gray-300 dark:bg-zinc-700" />
