@@ -1,5 +1,3 @@
-import { url } from "inspector";
-
 export const TECH_CATEGORIES = {
     frontend: [
         {
@@ -189,30 +187,3 @@ export const PROJECTS = {
 
     ],
 }
-
-
-
-export const PARCOURS = [
-    {
-        name: "Lycée technologique Antoine Bourdelle",
-        localisation: "Montauban",
-        date: "2019-07-01 - 2022-07-01",
-        url: "https://www.lycee-bourdelle.fr/",
-        image: "https://lh3.googleusercontent.com/p/AF1QipNAC9p1m_XBwkZ7WI2y8tX1esbl63G1MWS0vXd5=s680-w680-h510",
-    },
-    {
-        name: "IUT PAUL SABATIER",
-        localisation: "Castres",
-        date: "2022-09-01 - now",
-        url: "https://www.iut-tlse3.fr/",
-        image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ladepeche.fr%2F2020%2F12%2F01%2Fliut-de-castres-projette-ses-travaux-et-espere-ouvrir-un-nouveau-departement-9231791.php&psig=AOvVaw3WkluJ1Swt84TR4x-UMcex&ust=1742923270303000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNCJ86Odo4wDFQAAAAAdAAAAABAI",
-    },
-    {
-        name: "YNOV Campus",
-        localisation: "Toulouse",
-        date: "2025-09-01",
-        url: "https://www.ynov.com/",
-        image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.jobirl.com%2Fecoles%2Ftoulouse-ynov-campus-8507&psig=AOvVaw0UcW5xpdK90wz8CUFClzKS&ust=1742923288598000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIiup62do4wDFQAAAAAdAAAAABAE",
-    }
-];
-
