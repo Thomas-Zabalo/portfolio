@@ -8,7 +8,6 @@ interface Post {
   slug: string;
   title: string;
   description: string;
-  date: string;
   image: string;
 }
 
@@ -26,7 +25,6 @@ async function getPosts(): Promise<Post[]> {
         slug: filename.replace('.mdx', ''),
         title: data.title,
         description: data.description,
-        date: data.date,
         image: data.image
       };
     })
@@ -70,7 +68,6 @@ export default async function BlogPage() {
             key={post.slug}
             name={post.title}
             description={post.description}
-            date={post.date}
             url={`/blog/${post.slug}`}
             image={post.image}
             slug={post.slug}

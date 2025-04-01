@@ -6,12 +6,11 @@ interface ProjectCardProps {
   name: string;
   description: string;
   url: string;
-  date: string;
   image: string;
   slug: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ name, description, date, image, slug }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ name, description, image, slug }) => {
 
   return (
     <Link href={`/projects/${slug}`}>
