@@ -39,7 +39,7 @@ export default async function BlogPage() {
   return (
     <section id="parcours">
       <div className="flex justify-between items-center">
-        <h2 className="text-text font-semibold text-lg">
+        <h1 className="text-text font-semibold text-lg">
           <Link href="/#parcours" className="group flex items-center space-x-2">
             <span> Projets </span>
             <span className="group-hover:opacity-100 opacity-0 transition-opacity">
@@ -48,7 +48,7 @@ export default async function BlogPage() {
               </svg>
             </span>
           </Link>
-        </h2>
+        </h1>
         <div>
           <p>
             <Link href="https://github.com/Thomas-Zabalo" className="group flex items-center space-x-2">

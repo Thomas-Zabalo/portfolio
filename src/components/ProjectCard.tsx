@@ -26,7 +26,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ name, description, image, slu
         />
         <div className="bg-gray-100 dark:bg-[#27272a] p-2 border-t border-gray-300 dark:border-zinc-700">
           <div className="flex items-center justify-between">
-            <div className="text-gray-900 dark:text-gray-100 font-semibold">{name}</div>
+            <div className="text-gray-900 dark:text-gray-100 font-semibold"><h3>{name}</h3>
+            </div>
           </div>
           <div className="mt-3 text-gray-700 dark:text-gray-400">
             <p>{description}</p>
