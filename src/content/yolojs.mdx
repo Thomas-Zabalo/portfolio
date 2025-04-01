@@ -1,0 +1,134 @@
+---
+title: "YoloJs"
+description: "Découvrez comment utiliser YOLO.js pour la détection d'objets en temps réel directement dans votre navigateur et comment l'intégrer dans une application mobile avec Capacitor et un CI sous GitLab."
+image: "/YoloJs.png"
+github: "https://github.com/Thomas-Zabalo/astro-portfolio"
+---
+
+## Qu'est-ce que YOLO.js ?
+
+YOLO.js est une implémentation en JavaScript du modèle **YOLO (You Only Look Once)**, un algorithme de détection d'objets en temps réel. Il permet d'exécuter la détection directement dans le navigateur en exploitant WebGL et WebAssembly.
+
+L'objectif de ce projet était d'intégrer **YOLO.js** dans une application web pour tester ses performances et son fonctionnement, puis de l'emballer en une application mobile avec **Capacitor**, tout en mettant en place une intégration continue (**CI**) sur **GitLab**.
+
+## Installation
+
+Pour utiliser YOLO.js, vous devez d'abord l'installer via npm ou inclure la bibliothèque dans votre projet.
+
+```bash
+npm install @yolojs/core
+```
+
+Ou inclure le script directement dans votre HTML :
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/yolojs"></script>
+```
+
+## Utilisation de Base
+
+Voici un exemple simple d'utilisation de YOLO.js pour détecter des objets dans une image :
+
+```javascript
+import { loadModel, detectObjects } from "@yolojs/core";
+
+async function runYOLO() {
+  const model = await loadModel();
+  const image = document.getElementById("input-image");
+  const detections = await detectObjects(model, image);
+  console.log(detections);
+}
+
+runYOLO();
+```
+
+## Détection en Temps Réel avec une Webcam
+
+YOLO.js peut aussi être utilisé avec une webcam pour détecter des objets en direct :
+
+```javascript
+async function runWebcamDetection() {
+  const video = document.createElement("video");
+  video.width = 640;
+  video.height = 480;
+  document.body.appendChild(video);
+
+  navigator.mediaDevices.getUserMedia({ video: true }).then((stream) => {
+    video.srcObject = stream;
+    video.play();
+  });
+
+  const model = await loadModel();
+
+  async function detect() {
+    const detections = await detectObjects(model, video);
+    console.log(detections);
+    requestAnimationFrame(detect);
+  }
+
+  detect();
+}
+
+runWebcamDetection();
+```
+
+## Transformation en Application Mobile avec Capacitor
+
+Une fois YOLO.js fonctionnel dans le navigateur, nous avons utilisé **Capacitor** pour convertir l'application web en une application mobile (APK).
+
+### Installation de Capacitor
+
+```bash
+npm install @capacitor/core @capacitor/cli
+npx cap init my-app com.example.myapp
+```
+
+### Ajout de la plateforme Android
+
+```bash
+npx cap add android
+```
+
+### Construction et exécution
+
+```bash
+npm run build
+npx cap copy android
+npx cap open android
+```
+
+## Mise en Place d'un CI sous GitLab
+
+Pour automatiser le déploiement de notre application, nous avons configuré un **CI/CD pipeline** sous **GitLab**. Voici un exemple de fichier `.gitlab-ci.yml` pour automatiser l'intégration et la génération de l'APK :
+
+```yaml
+stages:
+  - install
+  - build
+  - deploy
+
+install_dependencies:
+  stage: install
+  script:
+    - npm install
+
+build_app:
+  stage: build
+  script:
+    - npm run build
+    - npx cap copy android
+
+build_apk:
+  stage: deploy
+  script:
+    - cd android && ./gradlew assembleDebug
+  artifacts:
+    paths:
+      - android/app/build/outputs/apk/debug/app-debug.apk
+```
+
+## Conclusion
+
+YOLO.js est une solution puissante et accessible pour la détection d'objets en temps réel directement dans un navigateur. En combinant **Capacitor**, nous avons pu transformer cette application en **APK mobile** et automatiser le processus avec **GitLab CI**.
+
+🚀 **Expérimentez avec YOLO.js, créez des applications mobiles et automatisez leur déploiement !**
