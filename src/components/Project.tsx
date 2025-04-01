@@ -1,83 +1,34 @@
-import React from 'react'
-import localFont from 'next/font/local';
-import PostCard from './PostCard';
 import Link from 'next/link';
-const PP = localFont({ src: '../fonts/PPNikkeiMaru-Ultrabold.otf' });
+import React from 'react';
 
 function Project() {
     return (
-        <section className='flex items-center flex-row justify-center' id='projets'>
-
-            <div className="self-stretch flex-none h-auto relative w-[8%] lg:block hidden lg:border-b-2 lg:border-[#e40038]" style={{ transform: "rotate(180deg)" }}>
-                <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative" data-framer-name="Variant 1">
-                    <div className="flex gap-40" style={{ transform: "rotate(90deg)", opacity: 1 }}>
-                        <div className='gap-40 flex'>
-                            <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Projets</h6>
-                            </div>
-                            <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>03/05</h6>
-                            </div>
-                        </div>
-                        <div className='gap-40 flex'>
-                            <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Projets</h6>
-                            </div>
-                            <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>03/05</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <section id="projects" className="mx-auto px-4 max-w-xl py-16">
+            <div className="flex justify-between items-center">
+                <h2 className="text-gray-900 dark:text-white font-semibold text-lg">
+                    <Link href="/#projects" className="group flex items-center space-x-2">
+                        <span> Projets </span>
+                        <span className="group-hover:opacity-100 opacity-0 transition-opacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5 h-5">
+                                <path fill="none" stroke="currentColor" d="m9 15l6-6m-4-3l.463-.536a5 5 0 0 1 7.071 7.072L18 13m-5 5l-.397.534a5.068 5.068 0 0 1-7.127 0a4.972 4.972 0 0 1 0-7.071L6 11"></path>
+                            </svg>
+                        </span>
+                    </Link>
+                </h2>
             </div>
 
-            <div className='flex flex-col lg:w-[84%] w-full border-[#e40038] lg:border-l-2 lg:border-r-2 border-t-2'>
-                <section className='flex flex-col text-center items-center justify-center gap-10 pt-32 pb-36 px-8'>
-                    <div>
-                        <h4 className={`${PP.className} md:text-6xl text-3xl leading-[136%] text-[#e40038]`}>AKITOMO</h4>
-                    </div>
-                    <div className='flex flex-col justify-start flex-shrink-0 max-w-[900px] min-w-[300px] relative w-full text-balance'>
-                        <h2 className={`${PP.className} flex justify-center xl:text-[260px] lg:text-[180px] md:text-9xl text-5xl leading-[96%] text-[#e40038]`}>PROJETS</h2>
-                    </div>
-                    <div className='flex flex-col justify-start flex-shrink-0 max-w-[500px] min-w-[300px] relative w-full text-balance'>
-                        <Link href={`/projects`} className='transition-all duration-700'>
-                            <button className="px-6 py-2 bg-[#e40038] text-[#faf3e9]  rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
-                                Voir tous les projets
-                            </button>
-
-                        </Link>
-                    </div>
-                </section>
-
-                <PostCard />
-
-            </div>
-
-            <div className="self-stretch flex-none h-auto relative w-[8%] lg:block hidden lg:border-b-2 lg:border-[#e40038]" style={{ transform: "rotate(180deg)" }}>
-                <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative">
-                    <div className="gap-40 flex" style={{ transform: "rotate(270deg)", opacity: 1 }}>
-                        <div className='gap-40 flex'>
-                            <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>03/05</h6>
-                            </div>
-                            <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Projets</h6>
-                            </div>
-                        </div>
-                        <div className='gap-40 flex'>
-                            <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>03/05</h6>
-                            </div>
-                            <div className="">
-                                <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Projets</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <p className="my-4 dark:text-zinc-400 text-gray-700">
+                Durant mes trois années de formation, j’ai eu l’opportunité de réaliser divers projets sur des thématiques variées,
+                me permettant d’explorer différentes approches et technologies.
+            </p>
+            <div>
+                <Link href="/projects" className="bg-gray-100 dark:bg-[#27272a] py-1.5 px-3 inline-flex items-center hover:bg-gray-200 dark:hover:bg-[#343435] transition-colors border border-gray-300 dark:border-zinc-700 select-none">
+                    Voir mes projets
+                </Link>
             </div>
 
         </section>
-    )
+    );
 }
 
-export default Project
+export default Project;

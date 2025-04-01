@@ -1,52 +1,36 @@
-import React from 'react'
-import localFont from 'next/font/local';
-import { Anton } from 'next/font/google'
-const PP = localFont({ src: '../fonts/PPNikkeiMaru-Ultrabold.otf' });
-const anton = Anton({ weight: '400', subsets: ['latin'] })
+import React from 'react';
+import Link from 'next/link';
 
 function About() {
-
     return (
-        <section className='flex items-center flex-row justify-center w-full flex-none h-min overflow-hidden'>
-
-            <div className="self-stretch flex-none h-auto relative w-[8%] lg:block hidden lg:border-b-2 lg:border-[#e40038]" style={{ transform: "rotate(180deg)" }}>
-                <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative" data-framer-name="Variant 1">
-                    <div className="gap-40 flex" style={{ transform: "rotate(90deg)", opacity: 1 }}>
-                        <div className="">
-                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Informations</h6>
-                        </div>
-                        <div className="">
-                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>02/05</h6>
-                        </div>
-                    </div>
-                </div>
+        <section id="about" className="mx-auto px-4 max-w-xl py-16">
+            <h2 className="text-text font-semibold text-lg">
+                <Link href="/#about" className="group flex items-center space-x-2">
+                    <span>A propos</span>
+                    <span className="group-hover:opacity-100 opacity-0 transition-opacity">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5 h-5">
+                            <path fill="none" stroke="currentColor" d="m9 15l6-6m-4-3l.463-.536a5 5 0 0 1 7.071 7.072L18 13m-5 5l-.397.534a5.068 5.068 0 0 1-7.127 0a4.972 4.972 0 0 1 0-7.071L6 11"></path>
+                        </svg>
+                    </span>
+                </Link>
+            </h2>
+            <div className="text-text-subtle dark:text-zinc-400 space-y-4 mt-4">
+                <p>
+                    Mon intérêt pour l'information, et plus particulièrement pour le développement web, a débuté en
+                    2021 lorsque j’ai créé mon premier site. C’est à ce moment-là que j’ai commencé à explorer les différentes
+                    facettes du développement web, ce qui m’a conduit à intégrer le cursus MMI à Castres.
+                </p>
+                <p>
+                    Au cours de ces trois années, j’ai acquis de nombreuses compétences, aussi bien en développement web
+                    (front-end et back-end) qu’en UI/UX, développement mobile, DevOps et gestion de projet.
+                </p>
+                <p>
+                    Bien que le développement web soit destiné à devenir mon métier, j’ai un réel attrait pour la conception
+                    et le développement d’interfaces utilisateur, la création de maquettes et l’amélioration de l’expérience utilisateur.
+                </p>
             </div>
-
-            <div className='flex flex-col items-center text-center gap-10 pt-32 pb-36 px-8 lg:w-[84%] w-full border-[#e40038] lg:border-l-2 lg:border-r-2 border-t-2'>
-                <div className='flex flex-col justify-start flex-shrink-0 max-w-[900px] min-w-[300px] relative w-full text-balance'>
-                    <h4 className={`${PP.className} md:text-5xl text-3xl leading-[96%] text-[#e40038]`}>Créer des expériences web captivantes, alliant technologie et design.</h4>
-                </div>
-                <div className='flex flex-col justify-start flex-shrink-0 max-w-[500px] min-w-[300px] relative w-full text-balance'>
-                    <p className={`${anton.className} text-lg leading-[136%] text-[#e40038]`}>Je suis Thomas, développeur front-end et étudiant passionné par la conception d’interfaces modernes et interactives. Toujours en quête d’innovation, j’explore les technologies web pour proposer des expériences immersives et performantes.</p>
-                </div>
-            </div>
-
-            <div className="self-stretch flex-none h-auto relative w-[8%] lg:block hidden lg:border-b-2 lg:border-[#e40038]" style={{ transform: "rotate(180deg)" }}>
-                <div className="h-full w-full opacity-100 items-center flex  flex-col flex-nowrap gap-10 justify-center overflow-hidden p-0 relative" data-framer-name="Variant 1">
-                    <div className="gap-40 flex" style={{ transform: "rotate(270deg)", opacity: 1 }}>
-                        <div className="">
-                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>02/05</h6>
-                        </div>
-                        <div className="">
-                            <h6 className={`${PP.className} text-2xl leading-[136%] text-[#e40038]`}>Informations</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </section>
-    )
-
+    );
 }
 
-export default About
+export default About;

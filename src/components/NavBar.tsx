@@ -1,93 +1,30 @@
-import React from 'react'
-import localFont from 'next/font/local';
-import { Anton } from 'next/font/google'
-import Image from 'next/image';
+import React from 'react';
 import Link from 'next/link';
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { ChevronDownIcon, FlagIcon } from '@heroicons/react/16/solid'
-
-const PP = localFont({ src: '../fonts/PPNikkeiMaru-Ultrabold.otf' });
-const anton = Anton({ weight: '400', subsets: ['latin'] })
 
 function NavBar() {
     return (
-        <header id="header" className='fixed top-0 w-full z-50 py-8 px-8 bg-[#faf3e9] border-b-2 border-[#e40038]'>
-            <div id='akitomo-navbar' className='flex items-center justify-between w-full'>
-                {/* Logo à gauche */}
-                <div id='BrandName' className='flex justify-start md:w-[10%]'>
-                    <h1 className={`${PP.className} text-[#e40038]`}>
-                        <Link href="/">AKITOMO</Link>
-                    </h1>
-                </div>
-
-                {/* Menu au centre */}
-                <div className="flex-1 flex justify-center md:w-[80%]">
-                    <nav>
-                        <ul className='md:flex hidden space-x-4'>
-                            <li className={`${anton.className} text-[#e40038]`}>
-                                <Link href="/">ACCUEIL</Link>
-                            </li>
-                            <li className={`${anton.className} text-[#e40038]`}>
-                                <Link href="/#propos">A PROPOS</Link>
-                            </li>
-                            <li className={`${anton.className} text-[#e40038]`}>
-                                <Link href="/#projets">PROJETS</Link>
-                            </li>
-                            <li className={`${anton.className} text-[#e40038]`}>
-                                <Link href="/#art">ART</Link>
-                            </li>
-                            <li className={`${anton.className} text-[#e40038]`}>
-                                <Link href="/#contact">CONTACT</Link>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-
-                {/* Icônes à droite */}
-                <div className='flex items-center space-x-6 md:w-[10%]'>
-                    <ul className='flex'>
-                        <li className='pr-1'>
-                            <a className="flex items-center gap-2 hover:underline hover:underline-offset-4" href="https://discordapp.com/users/rubinoki" target="_blank" rel="noopener noreferrer">
-                                <Image aria-hidden src="/discord.svg" alt="" width={16} height={16} />
-                            </a>
-                        </li>
-                        <li className='pr-1'>
-                            <a className="flex items-center gap-2 hover:underline hover:underline-offset-4" href="https://www.instagram.com/thomas.zab/" target="_blank" rel="noopener noreferrer">
-                                <Image aria-hidden src="/instagram.svg" alt="" width={16} height={16} />
-                            </a>
-                        </li>
-                        <li className='pr-1'>
-                            <a className="flex items-center gap-2 hover:underline hover:underline-offset-4" href="https://www.linkedin.com/in/thomas-zabalo-62627a256/" target="_blank" rel="noopener noreferrer">
-                                <Image aria-hidden src="/linkedin.svg" alt="" width={16} height={16} />
-                            </a>
-                        </li>
-                        <li className='pr-1'>
-                            <a className="flex items-center gap-2 hover:underline hover:underline-offset-4" href="https://github.com/Thomas-Zabalo" target="_blank" rel="noopener noreferrer">
-                                <Image aria-hidden src="/github.svg" alt="" width={16} height={16} />
-                            </a>
-                        </li>
-                    </ul>
-                    <div className="top-24">
-                        <Menu>
-                            <MenuButton className={`${anton.className} inline-flex items-center gap-2 rounded-md bg-[#e40038] py-1.5 px-3 text-sm font-semibold text-white shadow-inner shadow-white/10 focus:outline-none hover:bg-[#e40039cf] data-[open]:bg-[#e40039cf] data-[focus]:outline-1 data-[focus]:outline-white`}>
-                                FR
-                                <ChevronDownIcon className="size-4 fill-white/60" />
-                            </MenuButton>
-
-                            <MenuItems transition anchor="bottom end" className="z-[52] w-52 origin-top-right rounded-xl border border-[#e40038]/5 bg-[#e40038] p-1 text-sm/6 text-white transition duration-100 ease-out [--anchor-gap:var(--spacing-1)] focus:outline-none data-[closed]:scale-95 data-[closed]:opacity-0">
-                                <MenuItem>
-                                    <button className={`${anton.className} group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10`}>
-                                        <FlagIcon className="size-4 fill-white/50" />
-                                        EN
-                                    </button>
-                                </MenuItem>
-                            </MenuItems>
-                        </Menu>
-                    </div>
-                </div>
+        <header className="px-4 mx-auto max-w-xl flex items-center justify-between w-full py-2">
+            <Link href="/" className="text-text hover:text-text-subtle transition-colors">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 339.14 342.6"
+                    className="w-6 h-6 fill-black dark:fill-white"
+                    aria-label="Home"
+                >
+                    <path d="m110.18,140.04L5.91,35.13C-6.74,22.41,2.25.74,20.19.7L316.5,0c19.93-.45,30.21,23.64,16.11,37.72L74.44,295.53c-5.17,5.3-1.43,14.21,5.97,14.23l171.6.47c9.83.03,14.58-12.04,7.37-18.72l-38.27-35.44c-14.54-13.46-14.97-36.31-.97-50.32h0s104.23,105.28,104.23,105.28c11.59,11.7,3.3,31.57-13.17,31.57H26.57c-15.44,0-23.36-18.49-12.71-29.67L275.12,48.94c4.94-4.99,1.43-13.47-5.6-13.51l-191.37-.99c-11.18.02-16.45,13.83-8.12,21.29l38.38,34.38c13.95,12.5,15.43,33.91,3.18,48.08-.89,1.03-1.41,1.7-1.41,1.85Z" />
+                </svg>
+                <span className="sr-only">Acceuil</span>
+            </Link>
+            <div className="flex space-x-2">
+                <Link href="/projects" className="bg-gray-100 dark:bg-[#27272a] hover:bg-gray-200 dark:hover:bg-[#343435] py-1.5 px-3 border border-gray-300 dark:border-zinc-700">
+                    Projets
+                </Link>
+                <Link href="/#contact" className="bg-gray-100 dark:bg-[#27272a] hover:bg-gray-200 dark:hover:bg-[#343435] py-1.5 px-3 border border-gray-300 dark:border-zinc-700">
+                    Contact
+                </Link>
             </div>
         </header>
-    )
+    );
 }
 
-export default NavBar
+export default NavBar;

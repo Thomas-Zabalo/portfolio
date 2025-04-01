@@ -1,8 +1,10 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Configure `pageExtensions` to include markdown and MDX files
+  i18n: {
+    locales: ['en-US', 'fr',],
+    defaultLocale: 'en-US',
+  },
+
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
-  // Optionally, add any other Next.js config below
 }
- 

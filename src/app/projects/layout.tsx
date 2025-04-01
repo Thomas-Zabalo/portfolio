@@ -1,5 +1,6 @@
 // src/app/blog/layout.tsx
 import NavBar from '@/components/NavBar';
+import Footer from '@/components/Footer'
 import React from 'react';
 
 
@@ -7,11 +8,12 @@ const BlogLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <>
             <NavBar />
-            <main className='py-10'>
-                <div className='lg:px-32'>
+            <main className='mx-auto px-4 max-w-xl py-16 '>
+                <div>
                     {children}
                 </div>
             </main>
+            <Footer />
         </>
     );
 };
