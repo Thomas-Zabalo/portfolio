@@ -1,28 +1,29 @@
 import { compileMDX } from 'next-mdx-remote/rsc';
 import { promises as fs } from 'fs';
 import path from 'path';
-import "../../prose.css";
 import Link from 'next/link';
+import "../../prose.css";
 
 interface Frontmatter {
   title: string;
 }
 
 export async function generateStaticParams() {
-  const posts = await getPosts(); // Appel à ta fonction pour récupérer tous les posts
-  return posts.map(post => ({
-    slug: [post.slug]  // Comme tu utilises [...slug], il faut un tableau
-  }));
+  const postsDirectory = path.join(process.cwd(), 'src/content');
+  const filenames = await fs.readdir(postsDirectory);
+
+  const posts = filenames
+    .filter((filename) => filename.endsWith('.mdx'))
+    .map((filename) => ({
+      slug: [filename.replace('.mdx', '')], // Utilisation du format [slug] pour la route dynamique
+    }));
+
+  return posts;
 }
 
-export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
-  const resolvedParams = await params;
-
-  if (!resolvedParams?.slug) {
-    return <p>Projet introuvable.</p>;
-  }
-
-  const filePath = path.join(process.cwd(), 'src/content', `${resolvedParams.slug}.mdx`);
+export default async function ProjectPage({ params }: { params: { slug: string[] } }) {
+  const slug = params.slug.join('/');
+  const filePath = path.join(process.cwd(), 'src/content', `${slug}.mdx`);
 
   try {
     const content = await fs.readFile(filePath, 'utf-8');
@@ -30,21 +31,18 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     const { content: mdxContent } = await compileMDX<Frontmatter>({
       source: content,
       options: {
-        parseFrontmatter: true
+        parseFrontmatter: true,
       },
-      components: {
-        // Vos composants MDX personnalisés ici
-      }
+      components: {},
     });
 
     return (
       <div className='prose'>
-
-        <Link href={`/projects`} className="bg-gray-100 dark:bg-[#27272a] hover:bg-gray-200 dark:hover:bg-[#343435] py-1.5 px-3 border border-gray-300 dark:border-zinc-700">
+        <Link href="/projects" className="bg-gray-100 dark:bg-[#27272a] hover:bg-gray-200 dark:hover:bg-[#343435] py-1.5 px-3 border border-gray-300 dark:border-zinc-700">
           Retour
         </Link>
         <div className='mt-6'>
-        {mdxContent}
+          {mdxContent}
         </div>
       </div>
     );
