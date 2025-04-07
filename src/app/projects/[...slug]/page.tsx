@@ -8,6 +8,7 @@ interface Frontmatter {
   title: string;
 }
 
+// La fonction generateStaticParams permet de générer les chemins à pré-générer
 export async function generateStaticParams() {
   const postsDirectory = path.join(process.cwd(), 'src/content');
   const filenames = await fs.readdir(postsDirectory);
@@ -15,14 +16,15 @@ export async function generateStaticParams() {
   const posts = filenames
     .filter((filename) => filename.endsWith('.mdx'))
     .map((filename) => ({
-      slug: [filename.replace('.mdx', '')], // Utilisation du format [slug] pour la route dynamique
+      slug: [filename.replace('.mdx', '')], // Génère un tableau pour chaque slug
     }));
 
   return posts;
 }
 
 export default async function ProjectPage({ params }: { params: { slug: string[] } }) {
-  const slug = params.slug.join('/');
+  const slug = params.slug.join('/'); // Combine les segments du slug
+
   const filePath = path.join(process.cwd(), 'src/content', `${slug}.mdx`);
 
   try {
