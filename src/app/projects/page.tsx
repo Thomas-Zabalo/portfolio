@@ -11,6 +11,13 @@ interface Post {
   image: string;
 }
 
+export async function generateStaticParams() {
+  const posts = await getPosts(); // Appel à ta fonction pour récupérer tous les posts
+  return posts.map(post => ({
+    slug: [post.slug]  // Comme tu utilises [...slug], il faut un tableau
+  }));
+}
+
 async function getPosts(): Promise<Post[]> {
   const postsDirectory = path.join(process.cwd(), 'src/content');
   const filenames = await fs.readdir(postsDirectory);
