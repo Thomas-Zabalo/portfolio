@@ -8,6 +8,17 @@ interface Frontmatter {
   title: string;
 }
 
+export async function generateStaticParams() {
+  const postsDirectory = path.join(process.cwd(), 'src/content');
+  const filenames = await fs.readdir(postsDirectory);
+  return filenames.map((filename) => {
+    const slug = filename.replace('.mdx', '');
+    return {
+      slug
+    };
+  });
+}
+
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
 
@@ -37,7 +48,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           Retour
         </Link>
         <div className='mt-6'>
-        {mdxContent}
+          {mdxContent}
         </div>
       </div>
     );
