@@ -8,6 +8,13 @@ interface Frontmatter {
   title: string;
 }
 
+export async function generateStaticParams() {
+  const posts = await getPosts(); // Appel à ta fonction pour récupérer tous les posts
+  return posts.map(post => ({
+    slug: [post.slug]  // Comme tu utilises [...slug], il faut un tableau
+  }));
+}
+
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
 
