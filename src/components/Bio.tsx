@@ -11,7 +11,7 @@ function Bio() {
                 <Image src="/Moi.jpg" alt="Photo de l'auteur du site - Thomas ZABALO" loading="eager" width="128" height="128" decoding="async" className="h-24 w-24 sm:h-32 sm:w-32 rounded shrink-0" />
                 <div>
                     <div className="flex justify-between items-center">
-                        <h1 className="text-2xl font-semibold text-text">Thomas Zabalo - Développeur Web Fullstack & Front-end</h1>
+                        <h1 className="text-2xl font-semibold text-text">Thomas Zabalo - Développeur Web Fullstack</h1>
                     </div>
                     <div className='mt-4'>
                         <div className="flex space-x-2">
@@ -67,8 +67,7 @@ function Bio() {
             </div>
             <div className="mt-4 space-y-3 sm:space-y-2 dark:text-zinc-400 text-gray-700">
                 <p>
-                    Je suis un développeur Frontend passionné, avec des connaissances en backend et en UI/UX.
-                    J’aime concevoir des interfaces intuitives et soignées, en alliant performance et expérience utilisateur.
+                    Je suis un développeur Full Stack passionné, capable d’intervenir aussi bien sur la conception d’interfaces soignées et intuitives que sur la logique métier côté serveur. J’aime créer des expériences utilisateur fluides tout en garantissant la performance, la maintenabilité et la robustesse du code.
                 </p>
             </div>
         </section >
